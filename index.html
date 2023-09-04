@@ -1,49 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <header style="background-color: blue;">
-        <img src="/img/logo/logo@2x.png"> 
-    <nav>
-        <ul>
-           <li>Home</li>
-           <li>About</li>
-           <li>Page</li>
-           <li>Shop</li>
-           <li>Contact</li>
-        </ul>
-        <ul>
-            <li><img src="img/Other/phone-flip-solid.svg"><p>+012 (345) 6789</p></li>
-            <li>
-            <button>
-                BOOK A TABLE <img src="/img/Other/arrow.png">
-            </button>
-            </li>  
-        </ul>
-    </nav>
-    <h1>BEST QUALITY FOODS</h1>
-    <img src="/img/about-us/iconbgabout.png">
-    <button>EXPLORE OUR MENU <img src="img/Other/arrow.png" alt=""></button>
-    <div><img src="/img/logo/bouton-jouer.png" alt=""></div>
-    </header>
-    <!--Deuxieme slide-->
-    <section>
-        <h2>CHOOSE YOUR BEST CATEGORY</h2>
-        <p>Best food for you & family</p>
 
-        <div>
-            <div><img src="img/icons/001-cheeseburger.png"><p>Cheeseburger</p></p></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+<body>
+    <!--Premier slide-->
+    <header class="header">
+        <div class="header-div">
+            <div class="header-div-nav">
+
+                <nav class="header-nav-bar">
+                    <img src="/img/logo/logo@2x.png" class="header-logo-kababi">
+                    <ul class="header-unlisted-list">
+                        <li class="header-list">Home</li>
+                        <li class="header-list">About</li>
+                        <li class="header-list">Page</li>
+                        <li class="header-list">Shop</li>
+                        <li class="header-list">Contact</li>
+                    </ul>
+                    <ul class="header-unlisted-list2">
+                        <li class="header-list"><img class="header-list-phone" src="img/Other/phone-flip-solid.svg">
+                            <p class="header-phone-number">+012 (345) 6789</p>
+                        </li>
+                        <li class="header-list">
+                            <button class="header-button-bookatable">
+                                BOOK A TABLE <img class="header-arrow" src="/img/Other/arrow.png">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-div-play"></div>
+            <div class="header-div-h1">
+                <h1>BEST QUALITY FOODS</h1>
+            </div>
+
+            <button class="header-explore-button">EXPLORE OUR MENU <img class="header-arrow" src="img/Other/arrow.png"
+                    alt=""></button>
+        </div>
+    </header>
+
+    <!--Deuxieme slide-->
+    <section class="SectionTwo__Menu">
+        <div class="SectionTwo__Menu__header">
+            <h2 class="SectionTwo__Menu__header__h2">CHOOSE YOUR BEST CATEGORY</h2>
+            <p class="SectionTwo__Menu__header__p1">Best food for you & family</p>
+        </div>
+        <!--Menu des repas-->
+        <div class="SectionTwo__Menu__div__container">
+            <div class="SectionTwo__Menu__div__burger"><img class="SectionTwo__Menu__img__Burger"
+                    src="img/icons/001-cheeseburger.png">
+                <p class="SectionTwo__Menu__p__Burger">Cheeseburger</p><img src="img/Other/arrow.png">
+            </div>
+            <div class="SectionTwo__Menu__div__Pizza"><img class="SectionTwo__Menu__img__Pizza"
+                    src="img/icons/002-pizza.png">
+                <p class="SectionTwo__Menu__p__Pizza">Pizza Slice</p>
+            </div>
+            <div class="SectionTwo__Menu__div__Coffee"><img class="SectionTwo__Menu__img__Coffee"
+                    src="img/icons/003-coffee.png">
+                <p class="SectionTwo__Menu__p__Coffee">Coffee Cup</p>
+            </div>
+            <div class="SectionTwo__Menu__div__Chicken"><img class="SectionTwo__Menu__img__Chicken"
+                    src="img/icons/004-chicken-leg.png">
+                <p class="SectionTwo__Menu__p__Chicken">Chicken Leg</p>
+            </div>
+            <div class="SectionTwo__Menu__div__Cocktail"><img class="SectionTwo__Menu__img__Cocktail"
+                    src="img/icons/005-cocktail.png">
+                <p class="SectionTwo__Menu__p__Cocktail">Energy Drink</p>
+            </div>
+            <div class="SectionTwo__Menu__div__Marin"><img class="SectionTwo__Menu__img__Marin"
+                    src="img/icons/006-marin.png">
+                <p class="SectionTwo__Menu__p__Marin">Shrimp</p>
+            </div>
+        </div>
+        <div class="SectionTwo__Plat">
+            <div class="SectionTwo__Plat__div__crepe"><img class="SectionTwo__Plat__img__crepe"
+                    src="img/gallery/imgfood1.png"></div>
+            <div class="SectionTwo__Plat__div__salad"><img class="SectionTwo__Plat__img__salad"
+                    src="img/gallery/imgfood2.jpg"></div>
+            <div class="SectionTwo__Plat__div__egg"><img class="SectionTwo__Plat__img__egg"
+                    src="img/gallery/imgfood3.png"></div>
         </div>
     </section>
+    <!--Troisieme slide-->
+    <section class="SectionThree__Choose">
+        <div class="SectionThree__Choose__div__header">
+            <h2 class="SectionThree__Choose__div__header__h2">Why Choose Us</h2>
+            <p class="SectionThree__Choose__div__header__p">Best foods for your family</p>
+        </div>
+        <div class="SectionThree__Choose__div__logo">
+            <img class="SectionThree__Choose__div__logo__img" src="img/about-us/iconbgabout.png">
+        </div>
+        <div class="SectionThree__Choose__div__photo">
+            <img class="SectionThree__Choose__div__photo__img" src="img/about-us/img_aboutus_home1.jpg" alt="">
+        </div>
+        <div class="SectionThree__Choose__div__text">
+            <p class="SectionThree__Choose__div__text__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur error fugiat reprehenderit odit nemo, fuga officia temporibus culpa eum, voluptate inventore
+                tempora dolorem possimus adipisci nostrum deserunt corrupti veniam dicta maiores totam consequuntur
+                eaque.</p>
+            <button class="SectionThree__Choose__div__text___button">DISCOVER MORE</button>
+        </div>
+    </section>
+
+    <!--Quatrième slide-->
+    <section class="SectionFour__OurMenu">
+        <div class="SectionFour__OurMenu__div__header">
+            <h2 class="SectionFour__OurMenu__div__header__h2">TRY OUR SPECIAL OFFER</h2>
+            <p class="SectionFour__OurMenu__div__header__p">Best foods for you & family</p>
+        </div>
+
+        <div class="SectionFour__OurMenu__div__bread">
+            <img class="SectionFour__OurMenu__div__bread__img" src="img/our-menu/imgbg-our-menu.jpg">
+        </div>
+
+        <!--Quatrième slide Menu Debut-->
+        <div class="SectionFour__OurMenu__div__menu">
+            <div class="SectionFour__OurMenu__div__menu__raw">
+                <div class="SectionFour__OurMenu__div__menu__raw__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__raw__text__h3">Raw Scallopps From Erquy</h3>
+                    <p class="SectionFour__OurMenu__div__menu__raw__text__p">Candied jerusalem artichokes, truffle</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__raw__price">
+                    <p class="SectionFour__OurMenu__div__menu__raw__price__p">$89</p>
+                </div>
+            </div>
+            <div class="SectionFour__OurMenu__div__menu__correze">
+                <div class="SectionFour__OurMenu__div__menu__correze__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__correze__text__h3">Correze Pan-seared Veal Liver</h3>
+                    <p class="SectionFour__OurMenu__div__menu__correze__text__p">Olive Oil Mashed Potato, onion jus</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__correze__price">
+                    <p class="SectionFour__OurMenu__div__menu__correze__price__p">$89</p>
+                </div>
+            </div>
+            <div class="SectionFour__OurMenu__div__menu__celeriac">
+                <div class="SectionFour__OurMenu__div__menu__celeriac__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__celeriac__text__h3">Celeriac and Truffle Ravioli</h3>
+                    <p class="SectionFour__OurMenu__div__menu__celeriac__text__p">Roasted langoustine, consommé</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__celeriac__price">
+                    <p class="SectionFour__OurMenu__div__menu__celeriac__price__p">$89</p>
+                </div>
+            </div>
+
+            <div class="SectionFour__OurMenu__div__menu__grilled">
+                <div class="SectionFour__OurMenu__div__menu__grilled__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__grilled__text__h3">Grilled Veal Filet Mignon</h3>
+                    <p class="SectionFour__OurMenu__div__menu__grilled__text__p">Pumpkin, endives with hazelnut</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__grilled__price">
+                    <p class="SectionFour__OurMenu__div__menu__grilled__price__p">$89</p>
+                </div>
+            </div>
+
+            <div class="SectionFour__OurMenu__div__menu__cod">
+                <div class="SectionFour__OurMenu__div__menu__cod__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__cod__text__h3">Cod Filet Cooked on One Side</h3>
+                    <p class="SectionFour__OurMenu__div__menu__cod__text__p">chorizo, chickpea espuma, pequilos</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__cod__price">
+                    <p class="SectionFour__OurMenu__div__menu__cod__price">$89</p>
+                </div>
+            </div>
+
+            <div class="SectionFour__OurMenu__div__menu__octopus">
+                <div class="SectionFour__OurMenu__div__menu__octopus__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__octopus__text__h3">Tender Octopus and Fennel</h3>
+                    <p class="SectionFour__OurMenu__div__menu__octopus__text__p">Citrus, wild rocket and condiment</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__octopus__price">
+                    <p class="SectionFour__OurMenu__div__menu__octopus__price__p">$89</p>
+                </div>
+            </div>
+
+            <div class="SectionFour__OurMenu__div__menu__bass">
+                <div class="SectionFour__OurMenu__div__menu__bass__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__bass__text__h3">Sea Bass Cheviche</h3>
+                    <p class="SectionFour__OurMenu__div__menu__bass__text__p">Avocado, butternut, lime</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__bass__price">
+                    <p class="SectionFour__OurMenu__div__menu__bass__price__p">$89</p>
+                </div>
+            </div>
+
+            <div class="SectionFour__OurMenu__div__menu__viennese">
+                <div class="SectionFour__OurMenu__div__menu__viennese__text">
+                    <h3 class="SectionFour__OurMenu__div__menu__viennese__text__h3">Viennese Veal Cutlet</h3>
+                    <p class="SectionFour__OurMenu__div__menu__viennese__text__p">Riccotta and spinash gnocchi, Caccio
+                        de Pepe</p>
+                </div>
+                <div class="SectionFour__OurMenu__div__menu__viennese__price">
+                    <p class="SectionFour__OurMenu__div__menu__viennese__price__p">$89</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Quatrième slide Menu Fin-->
+        <div class="SectionFour__OurMenu__div__steak">
+            <img class="SectionFour__OurMenu__div_steak_img" src="img/our-menu/img2bg-our-menu.jpg">
+        </div>
+    </section>
+
+    <!--Cinquieme slide-->
+    <section class="SectionFive__Restaurant">
+        <div class="SectionFive__Restaurant__div__header">
+            <h2 class="SectionFive__Restaurant__div__header__h2">RESTAURANTS PHOTO GALLERY</h2>
+            <p class="SectionFive__Restaurant__div__header__p">Best food for you & family</p>
+        </div>
+        <!--Image centrale Debut-->
+        <div class="SectionFive__Restaurant__div__one">
+            <div class="SectionFive__Restaurant__div__one__img">
+                <img class="SectionFive__Restaurant__div__one__img__background" src="img/gallery/img1gallerybox.jpg">
+            </div>
+            <div class="SectionFive__Restaurant__div__one__text">
+                <h2 class="SectionFive__Restaurant__div__one__h2">Family Package Dish</h2>
+                <p class="SectionFive__Restaurant__div__one__p">Popular Food Package</p>
+            </div>
+            <div class="SectionFive__Restaurant__div__one"><img class="SectionFive__Restaurant__div__one__img__logo"
+                    src="img/Other/arrow.png">
+            </div>
+        </div>
+
+        <div class="SectionFive__Restaurant__div__two">
+            <img class="SectionFive__Restaurant__div__two__img" src="img/gallery/img2gallerybox.jpg">
+        </div>
+
+        <div class="SectionFive__Restaurant__div__three">
+            <img class="SectionFive__Restaurant__div__three" src="img/gallery/img3gallerybox.jpg">
+        </div>
+
+        <div class="SectionFive__Restaurant__div__four">
+            <img class="SectionFive__Restaurant__div__four__img" src="img/gallery/img4gallerybox.jpg">
+        </div>
+
+        <div class="SectionFive__Restaurant__div__five">
+            <img class="SectionFive__Restaurant__div__five__img" src="img/gallery/img5gallerybox.jpg">
+        </div>
+
+        <div class="SectionFive__Restaurant__div__six">
+            <img class="SectionFive__Restaurant__div__six" src="img/gallery/img6gallerybox.jpg">
+        </div>
+        <!--Image centrale Fin-->
+
+        <div class="SectionFive__Restaurant__div__footer">
+            <p class="SectionFive__Restaurant__div__footer__p">VIEW MORE PHOTOS
+                <img class="SectionFive__Restaurant__div__footer__logo" src="img/Other/arrow.png">
+            </p>
+        </div>
+    </section>
+    <!--Sixième slide-->
+    <section class="SectionSix__OurChefs">
+        <div class="SectionSix__OurChefs__div__header">
+            <h2 class="SectionSix__OurChefs__div__header__h2">MEET PROFESSIONNAL CHEFS</h2>
+            <p class="SectionSix__OurChefs__div__header__p">Best Food for you & family</p>
+        </div>
+        <div class="SectionSix__OurChefs__div">
+            <img src="img/team/img1team.jpg">
+        </div>
+        <div class="SectionSix__OurChefs__div">
+            <img src="img/team/img2team.jpg">
+        </div>
+        <div class="SectionSix__OurChefs__div">
+            <img src="img/team/img3team.jpg">
+        </div>
+        <div class="SectionSix__OurChefs__div">
+            <img src="img/team/img4team.jpg">
+        </div>
+    </section>
+    <!--Septième slide-->
 </body>
+
 </html>
