@@ -13,7 +13,7 @@
             font-size:20px;
         }
         .SectionSeven__div__header__p{
-            font-size:10px;
+            font-size:14px;
         }
     }
     /*Article*/
@@ -21,6 +21,8 @@
         display: grid;
         grid-template:2.5f 0.5f 1f 1f / 100%;
         background-color: $color_background;
+        grid-gap: 10px;
+        padding-bottom: 5%;
         /*
         .SectionSeven__div__body__img{
             .SectionSeven__div__body__img__photo{
@@ -29,40 +31,71 @@
         }
         */
         .SectionSeven__div__body__credit{
+            display: flex;
+            flex-direction: row;
+            gap:5%;
+            padding-top:5%;
+            padding-left:5%;
             .SectionSeven__div__body__credit__by{
+                display: flex;
+                flex-direction: row;
+                align-self:center;
                 .SectionSeven__div__body__credit__by__logo{
-                    width:10px;
+                    height:20px;
                 }
                 .SectionSeven__div__body__credit__by__p{
-                    font-size:10px;
+                    font-size:12px;
+                    margin:0;
                 }
             }
             .SectionSeven__div__body__credit__date{
+                display: flex;
+                flex-direction: row;
+                align-self:center;
                 .SectionSeven__div__body__credit__date__logo{
-                    
+                    height:20px;
                 }
                 .SectionSeven__div__body__credit__date__p{
-
+                    font-size:12px;
+                    margin:0;
                 }
             }
         }
         .SectionSeven__div__body__text{
+            padding:5%;
             .SectionSeven__div__body__text__p{
-
+                font-size:15px;
             }
         }
         .SectionSeven__div__body__footer{
+            display:flex;
+            flex-direction:row;
+            border-radius:10%;
+            align-items: center;
+            padding:0% 5% 5% 5%;
             .SectionSeven__div__body__footer__button{
-
+                font-size:13px;
+                padding:2%;
+                .SectionSeven__div__body__one__footer__button__logo{
+                    height:10px;
+                    Padding:0 5px;
+                }
             }
         }
     
     }
     /*fin de article*/
     .SectionSeven__div__footer{
-        .SectionSeven__div__footer__img{
-
+        display:grid;
+        grid-template:50% 50% / 33% 33% 33%;
+        grid-gap:5%;
+        padding:5%;
+        .SectionSeven__div__footer__div{
+            .SectionSeven__div__footer__div__img{
+                height: 85%;
+            }
         }
+        
     }
 }
 .SectionSeven:before{
