@@ -8,10 +8,12 @@
 @import '_slide7';
 @import '_slide8';
 @import "normalize.css";
-@import '_variables.scss;';
+@import '_variables.scss';
 
 body {
     margin: 0;
     max-width: 100%;
     width: 100%;
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
 }
