@@ -1,0 +1,124 @@
+.header {
+    max-width: 100%;
+    width: 100%;
+    background-color: blue;
+    background-image: url("img/slider/img_bg_slider_home01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+
+        .header-div {
+            background-size: cover;
+            padding: 15px;
+
+            .header-div-play {
+                float: right;
+                margin-top: 75px;
+                margin-right: 55px;
+                background-color: white;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background-image: url("img/logo/bouton-jouer.png");
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+    
+
+            .header-explore-button {
+                display: flex;
+                align-self: flex-end;
+                font-size: 10px;
+                width: fit-content;
+                background-color: transparent;
+            }
+
+            .header-arrow {
+                width: 10px;
+            }
+        }
+        .header-div-h1 {
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            width: 125px;
+            height: 100px;
+
+            h1 {
+                background-image: url("img/about-us/iconbgabout.png");
+                background-size: 30%;
+                color: white;
+                background-repeat: no-repeat;
+                font-size: 20px;
+                background-position: top right;
+            }
+        }
+
+        .header-div-nav {
+            display: flex;
+            flex-direction: row;
+
+            .header-nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .header-logo-kababi {
+                width: 54px;
+                height: 18px;
+
+            }
+
+            .header-unlisted-list {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                justify-content: space-evenly;
+                font-size: 10px;
+
+                .header-list {
+                    display: flex;
+                    justify-self: space-evenly;
+                 
+
+                }
+            }
+
+            .header-unlisted-list2 {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-size: 7px;
+
+                .header-button-bookatable {
+                    margin-left: 0px;
+                    width: 50px;
+                    font-size: 7px;
+                }
+
+                .header-list {
+                    display: flex;
+                    align-self: center;
+
+                    .header-phone-number {
+                        font-size: 7px;
+                    }
+
+                    .header-list-phone {
+                        width: 20px;
+                    }
+
+                }
+            }
+        }
+
+    
+}
