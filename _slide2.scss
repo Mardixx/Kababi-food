@@ -1,6 +1,12 @@
+.SectionTwo__Menu::before {
+    position: absolute;
+    content: "CATEGORY";
+    opacity: 5%;
+    font-size: 30px;
+    
+}
 .SectionTwo__Menu {
-    max-height: 100%;
-    height: 100%;
+    margin-top: 0px;
 
     .SectionTwo__Plat {
         display: flex;

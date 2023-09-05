@@ -1,0 +1,43 @@
+.SectionThree__Choose::before {
+    position: absolute;
+    content: "ABOUT US";
+    font-size: 30px;
+    opacity: 5%;
+}
+.SectionThree__Choose {
+    .SectionThree__Choose__div__body {
+        display: grid;
+        gap: 30px;
+        flex-direction: row;
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        font-size: 12px;
+
+        .SectionThree__Choose__div__body__img {
+            width: 100%;
+        }
+        
+    }
+    
+    .SectionThree__Choose__div__header {
+        text-align: center;
+        background-image: url("img/about-us/iconbgabout.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        padding-bottom: 25px;
+        background-size: 10%;
+
+        .SectionThree__Choose__div__header__h2 {
+            font-size: 10px;
+        }
+        .SectionThree__Choose__div__header__p {
+            font-size: 5px;
+        }
+    }
+    .SectionThree__Choose__div__logo {
+        .SectionThree__Choose__div__logo__img {
+            float: right;
+            width: 50px;
+        }
+    }
+}

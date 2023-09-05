@@ -1,0 +1,270 @@
+.SectionFour__OurMenu::before {
+    content: "OUR MENU";
+    position: absolute;
+    font-size: 30px;
+    opacity: 5%;
+}
+
+.SectionFour__OurMenu {
+    background-color: rgba(217, 165, 32, 0.08);
+    z-index: 99;
+
+    .SectionFour__OurMenu__div__steak {
+        position: absolute;
+        top: 0;
+        margin-top: 950px;
+        z-index: -1;
+        
+        
+
+        .SectionFour__OurMenu__div_steak_img {
+            width: 70px;
+
+        }
+    }
+
+    .SectionFour__OurMenu__div__header {
+        text-align: center;
+
+        .SectionFour__OurMenu__div__header__h2 {
+            font-size: 10px;
+        }
+
+        .SectionFour__OurMenu__div__header__p {
+            font-size: 5px;
+        }
+    }
+
+    .SectionFour__OurMenu__div__bread {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+
+        .SectionFour__OurMenu__div__bread__img {
+            display: flex;
+            align-items: center;
+            width: 150px;
+
+
+        }
+    }
+
+    .SectionFour__OurMenu__div__menu {
+        display: grid;
+        font-size: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 50px);
+        margin: 10px 15px;
+        grid-gap: 15px;
+        border-radius: 10px;
+
+        .SectionFour__OurMenu__div__menu__raw {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px dotted goldenrod;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__raw__price {
+                .SectionFour__OurMenu__div__menu__raw__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__raw__text {
+                .SectionFour__OurMenu__div__menu__raw__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__raw__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__correze {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__correze__price {
+                .SectionFour__OurMenu__div__menu__correze__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__correze__text {
+                .SectionFour__OurMenu__div__menu__correze__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__correze__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__celeriac {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__celeriac__price {
+                .SectionFour__OurMenu__div__menu__celeriac__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__celeriac__text {
+                .SectionFour__OurMenu__div__menu__celeriac__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__celeriac__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__grilled {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__grilled__price {
+                .SectionFour__OurMenu__div__menu__grilled__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__grilled__text {
+                .SectionFour__OurMenu__div__menu__grilled__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__grilled__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__cod {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__cod__price {
+                .SectionFour__OurMenu__div__menu__cod__price {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__cod__text {
+                .SectionFour__OurMenu__div__menu__cod__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__cod__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__octopus {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__octopus__price {
+                .SectionFour__OurMenu__div__menu__octopus__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__octopus__text {
+                .SectionFour__OurMenu__div__menu__octopus__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__octopus__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__bass {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__bass__price {
+                .SectionFour__OurMenu__div__menu__bass__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__bass__text {
+                .SectionFour__OurMenu__div__menu__correze__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__bass__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+
+        .SectionFour__OurMenu__div__menu__viennese {
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            .SectionFour__OurMenu__div__menu__viennese__price {
+                .SectionFour__OurMenu__div__menu__viennese__price__p {
+                    color: goldenrod;
+                    margin-right: 10px;
+                }
+            }
+            .SectionFour__OurMenu__div__menu__viennese__text {
+                .SectionFour__OurMenu__div__menu__viennese__text__h3 {
+                    font-size: 10px;
+                }
+
+                .SectionFour__OurMenu__div__menu__viennese__text__p {
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+}
