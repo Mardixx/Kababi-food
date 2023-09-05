@@ -1,0 +1,69 @@
+.SectionTwo__Menu {
+    max-height: 100%;
+    height: 100%;
+
+    .SectionTwo__Plat {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        .SectionTwo__Plat__img__crepe {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .SectionTwo__Plat__div__salad {
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            .SectionTwo__Plat__img__salad {
+                width: 150px;
+                border-radius: 50%;
+            }
+        }
+        .SectionTwo__Plat__img__egg {
+            width: 100px;
+        }
+    }
+    
+    .SectionTwo__Menu__background {
+        position: absolute;
+        filter: sepia(100%) invert(3%);
+        width: 100%;
+        z-index: -1;
+    }
+    .SectionTwo__Menu__div__container {
+        display: grid;
+        grid-template-rows: 70px 70px;
+        grid-template-columns: 50px 50px 50px;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+        text-align: center;
+        .SectionTwo__Menu__logo {
+            width: 7px;
+        }
+        .SectionTwo__Menu__div__burger, .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu__div__Marin {
+            background-color: white;
+            border-radius: 10px;
+            height: 80%;
+        }
+        .SectionTwo__Menu__img__Burger, .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu__img__Marin {
+            width: 15px;
+        }
+    }
+
+        .SectionTwo__Menu__header {
+            text-align: center;
+            margin: 0;
+
+            .SectionTwo__Menu__header__h2 {
+                font-size: 10px;
+            }
+            .SectionTwo__Menu__header__p1 {
+                font-size: 5px;
+            }
+        }
+    }

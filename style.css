@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import "normalize.css";
+.SectionTwo__Menu {
+  max-height: 100%;
+  height: 100%;
+}
+.SectionTwo__Menu .SectionTwo__Plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
+  width: 100px;
+  border-radius: 50%;
+}
+.SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad .SectionTwo__Plat__img__salad {
+  width: 150px;
+  border-radius: 50%;
+}
+.SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
+  width: 100px;
+}
+.SectionTwo__Menu .SectionTwo__Menu__background {
+  position: absolute;
+  filter: sepia(100%) invert(3%);
+  width: 100%;
+  z-index: -1;
+}
+.SectionTwo__Menu .SectionTwo__Menu__div__container {
+  display: grid;
+  grid-template-rows: 70px 70px;
+  grid-template-columns: 50px 50px 50px;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 7px;
+  text-align: center;
+}
+.SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__logo {
+  width: 7px;
+}
+.SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
+  background-color: white;
+  border-radius: 10px;
+  height: 80%;
+}
+.SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Marin {
+  width: 15px;
+}
+.SectionTwo__Menu .SectionTwo__Menu__header {
+  text-align: center;
+  margin: 0;
+}
+.SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
+  font-size: 10px;
+}
+.SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__p1 {
+  font-size: 5px;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.header {
+  max-width: 100%;
+  width: 100%;
+  background-color: blue;
+  background-image: url("img/slider/img_bg_slider_home01.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header .header-div {
+  background-size: cover;
+  padding: 15px;
+}
+.header .header-div .header-div-play {
+  float: right;
+  margin-top: 75px;
+  margin-right: 55px;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/logo/bouton-jouer.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .header-div .header-explore-button {
+  display: flex;
+  align-self: flex-end;
+  font-size: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+}
+.header .header-div .header-arrow {
+  width: 10px;
+}
+.header .header-div-h1 {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  width: 125px;
+  height: 100px;
+}
+.header .header-div-h1 h1 {
+  background-image: url("img/about-us/iconbgabout.png");
+  background-size: 30%;
+  color: white;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  background-position: top right;
+}
+.header .header-div-nav {
+  display: flex;
+  flex-direction: row;
+}
+.header .header-div-nav .header-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .header-div-nav .header-logo-kababi {
+  width: 54px;
+  height: 18px;
+}
+.header .header-div-nav .header-unlisted-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+.header .header-div-nav .header-unlisted-list .header-list {
+  display: flex;
+  justify-self: space-evenly;
+}
+.header .header-div-nav .header-unlisted-list2 {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 7px;
+}
+.header .header-div-nav .header-unlisted-list2 .header-button-bookatable {
+  margin-left: 0px;
+  width: 50px;
+  font-size: 7px;
+}
+.header .header-div-nav .header-unlisted-list2 .header-list {
+  display: flex;
+  align-self: center;
+}
+.header .header-div-nav .header-unlisted-list2 .header-list .header-phone-number {
+  font-size: 7px;
+}
+.header .header-div-nav .header-unlisted-list2 .header-list .header-list-phone {
+  width: 20px;
+}/*# sourceMappingURL=style.css.map */
