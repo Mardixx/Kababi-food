@@ -203,6 +203,61 @@
   width: 90%;
 }
 
+.SectionSix__OurChefs:before {
+  position: absolute;
+  content: "OUR CHEFS";
+  font-size: 60px;
+  color: #fff;
+  opacity: 5%;
+  padding-top: 10%;
+}
+
+/*Variables Color */
+.SectionSeven {
+  max-height: 100%;
+  height: 100%;
+  background-color: #fff;
+  /*Article*/
+  /*fin de article*/
+}
+.SectionSeven .SectionSeven__div__header {
+  color: #000;
+  text-align: center;
+  padding-top: 10%;
+}
+.SectionSeven .SectionSeven__div__header .SectionSeven__div__header__h2 {
+  font-size: 20px;
+}
+.SectionSeven .SectionSeven__div__header .SectionSeven__div__header__p {
+  font-size: 10px;
+}
+.SectionSeven .SectionSeven__div__body {
+  display: grid;
+  grid-template: 2.5f 0.5f 1f 1f/100%;
+  background-color: #FAF6F0;
+  /*
+  .SectionSeven__div__body__img{
+      .SectionSeven__div__body__img__photo{
+
+      }
+  }
+  */
+}
+.SectionSeven .SectionSeven__div__body .SectionSeven__div__body__credit .SectionSeven__div__body__credit__by .SectionSeven__div__body__credit__by__logo {
+  width: 10px;
+}
+.SectionSeven .SectionSeven__div__body .SectionSeven__div__body__credit .SectionSeven__div__body__credit__by .SectionSeven__div__body__credit__by__p {
+  font-size: 10px;
+}
+.SectionSeven:before {
+  position: absolute;
+  content: "OUR BLOG";
+  font-size: 60px;
+  color: #F5EEE3;
+  opacity: 5%;
+  padding-top: 10%;
+}
+
 /*Variables Color */
 body {
   margin: 0;

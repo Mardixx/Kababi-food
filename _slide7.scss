@@ -1,0 +1,75 @@
+@import '_variables.scss';
+
+.SectionSeven{
+    max-height: 100%;
+    height: 100%;
+    background-color:$color_white;
+
+    .SectionSeven__div__header{
+        color: $color_black;
+        text-align: center;
+        padding-top:10%;
+        .SectionSeven__div__header__h2{
+            font-size:20px;
+        }
+        .SectionSeven__div__header__p{
+            font-size:10px;
+        }
+    }
+    /*Article*/
+    .SectionSeven__div__body{
+        display: grid;
+        grid-template:2.5f 0.5f 1f 1f / 100%;
+        background-color: $color_background;
+        /*
+        .SectionSeven__div__body__img{
+            .SectionSeven__div__body__img__photo{
+
+            }
+        }
+        */
+        .SectionSeven__div__body__credit{
+            .SectionSeven__div__body__credit__by{
+                .SectionSeven__div__body__credit__by__logo{
+                    width:10px;
+                }
+                .SectionSeven__div__body__credit__by__p{
+                    font-size:10px;
+                }
+            }
+            .SectionSeven__div__body__credit__date{
+                .SectionSeven__div__body__credit__date__logo{
+                    
+                }
+                .SectionSeven__div__body__credit__date__p{
+
+                }
+            }
+        }
+        .SectionSeven__div__body__text{
+            .SectionSeven__div__body__text__p{
+
+            }
+        }
+        .SectionSeven__div__body__footer{
+            .SectionSeven__div__body__footer__button{
+
+            }
+        }
+    
+    }
+    /*fin de article*/
+    .SectionSeven__div__footer{
+        .SectionSeven__div__footer__img{
+
+        }
+    }
+}
+.SectionSeven:before{
+    position:absolute;
+    content:"OUR BLOG";
+    font-size:60px;
+    color:$color_text_shadow;
+    opacity:5%;
+    padding-top:10%;
+}

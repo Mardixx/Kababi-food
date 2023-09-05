@@ -17,19 +17,26 @@
         }
     }
 }
-.SectionSix__OurChefs__div__body {
-    display: grid;
-        grid-template-columns: 1fr 1fr; /* Deux colonnes */
-        grid-gap: 10px; /* Espace entre les éléments */
-        justify-content: center; /* Centrer les éléments horizontalement */
-        padding-left:12.5%;
-        padding-right:12.5%;
-        padding-bottom:20%;
-        padding-top:8%;
-        .SectionSix__OurChefs__div__body__container__img{
-            display: flex;
-            justify-content: center;
-            width:90%;
-        }
+    .SectionSix__OurChefs__div__body {
+        display: grid;
+            grid-template-columns: 1fr 1fr; /* Deux colonnes */
+            grid-gap: 10px; /* Espace entre les éléments */
+            justify-content: center; /* Centrer les éléments horizontalement */
+            padding-left:12.5%;
+            padding-right:12.5%;
+            padding-bottom:20%;
+            padding-top:8%;
+            .SectionSix__OurChefs__div__body__container__img{
+                display: flex;
+                justify-content: center;
+                width:90%;
+            }
 }
-
+.SectionSix__OurChefs:before{
+    position:absolute;
+    content:"OUR CHEFS";
+    font-size:60px;
+    color:$color_white;
+    opacity:5%;
+    padding-top:10%;
+}
