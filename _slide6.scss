@@ -7,7 +7,9 @@
 
     .SectionSix__OurChefs__div__header{
         color: $color_white;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         padding-top:10%;
         .SectionSix__OurChefs__div__header__h2{
             font-size:20px;
@@ -32,11 +34,12 @@
                 width:90%;
             }
 }
-.SectionSix__OurChefs:before{
+.SectionSix__OurChefs__div__header:after{
     position:absolute;
+    left: 0;
     content:"OUR CHEFS";
-    font-size:60px;
+    font-size:40px;
     color:$color_white;
     opacity:5%;
-    padding-top:10%;
+    
 }

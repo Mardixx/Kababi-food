@@ -1,13 +1,9 @@
-.SectionTwo__Menu::before {
-    position: absolute;
-    content: "CATEGORY";
-    opacity: 5%;
-    font-size: 30px;
-    
-}
 .SectionTwo__Menu {
-    margin-top: 0px;
-
+    background-image: url("img/banner/imgbgcategory.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(218, 165, 32, 0.5);
+        z-index: 99;
     .SectionTwo__Plat {
         display: flex;
         flex-direction: row;
@@ -32,10 +28,11 @@
     }
     
     .SectionTwo__Menu__background {
-        position: absolute;
-        filter: sepia(100%) invert(3%);
+        position: relative;
         width: 100%;
-        z-index: -1;
+        z-index: 0;
+        display: none;
+
     }
     .SectionTwo__Menu__div__container {
         display: grid;
@@ -62,9 +59,10 @@
     }
 
         .SectionTwo__Menu__header {
-            text-align: center;
-            margin: 0;
-
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             .SectionTwo__Menu__header__h2 {
                 font-size: 10px;
             }
@@ -72,4 +70,12 @@
                 font-size: 5px;
             }
         }
+    }
+    .SectionTwo__Menu__header::after {
+        position: absolute;
+        left: 0;
+        content: "CATEGORY";
+        font-size: 30px;
+        opacity: 5%;
+        
     }

@@ -7,13 +7,17 @@
 
     .SectionSeven__div__header{
         color: $color_black;
-        text-align: center;
-        padding-top:10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:10% 0;
         .SectionSeven__div__header__h2{
             font-size:20px;
+            margin: 0;
         }
         .SectionSeven__div__header__p{
-            font-size:14px;
+            font-size:10px;
+            margin: 0;
         }
     }
     /*Article*/
@@ -78,7 +82,7 @@
                 padding:2%;
                 .SectionSeven__div__body__one__footer__button__logo{
                     height:10px;
-                    Padding:0 5px;
+                    padding:0 5px;
                 }
             }
         }
@@ -98,11 +102,11 @@
         
     }
 }
-.SectionSeven:before{
+.SectionSeven__div__header:after{
     position:absolute;
+    left: 0;
     content:"OUR BLOG";
-    font-size:60px;
-    color:$color_text_shadow;
+    font-size:40px;
+    color:$color_black;
     opacity:5%;
-    padding-top:10%;
 }
