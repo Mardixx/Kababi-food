@@ -3,11 +3,11 @@
 @import "normalize.css";
 .header {
   max-width: 100%;
-  width: 100%;
   background-color: blue;
   background-image: url("img/slider/img_bg_slider_home01.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  color: white;
 }
 .header .header-div {
   background-size: cover;
@@ -45,11 +45,11 @@
 }
 .header .header-div-h1 h1 {
   background-image: url("img/about-us/iconbgabout.png");
-  background-size: 30%;
+  background-size: 50%;
   color: white;
   background-repeat: no-repeat;
   font-size: 20px;
-  background-position: top right;
+  background-position: top left;
 }
 .header .header-div-nav {
   display: flex;
@@ -103,6 +103,100 @@
   width: 20px;
 }
 
+@media only screen and (min-width: 480px) {
+  .header {
+    max-width: 100%;
+    width: 100%;
+    background-color: blue;
+    background-image: url("img/slider/img_bg_slider_home01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .header .header-div {
+    padding: 15px;
+  }
+  .header .header-div .header-div-play {
+    margin: 19% 15%;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url("img/logo/bouton-jouer.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .header .header-div .header-explore-button {
+    display: flex;
+    align-self: flex-end;
+    font-size: 30px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    background-color: transparent;
+    margin-top: 30px;
+  }
+  .header .header-div .header-arrow {
+    width: 30px;
+    filter: invert(100%);
+  }
+  .header .header-div-h1 {
+    font-family: "Cinzel", serif;
+    width: 250px;
+    height: 150px;
+  }
+  .header .header-div-h1 h1 {
+    background-image: url("img/slider/img_bg2.png");
+    background-size: 50%;
+    color: white;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    background-position: top right;
+  }
+  .header .header-div-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .header-div-nav .header-nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .header .header-div-nav .header-logo-kababi {
+    width: 54px;
+    height: 18px;
+  }
+  .header .header-div-nav .header-unlisted-list {
+    display: flex;
+  }
+  .header .header-div-nav .header-unlisted-list .header-list {
+    display: flex;
+    gap: 0.625rem;
+  }
+  .header .header-div-nav .header-unlisted-list2 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 7px;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-button-bookatable {
+    margin-left: 0px;
+    width: 50px;
+    font-size: 7px;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list {
+    display: flex;
+    align-self: center;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list .header-phone-number {
+    font-size: 7px;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list .header-list-phone {
+    width: 20px;
+  }
+}
 .SectionTwo__Menu {
   background-image: url("img/banner/imgbgcategory.jpg");
   background-size: 100%;
@@ -182,6 +276,85 @@
   opacity: 5%;
 }
 
+@media only screen and (min-width: 480px) {
+  .SectionTwo__Menu {
+    background-image: url("img/banner/imgbgcategory.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(218, 165, 32, 0.5);
+    z-index: 99;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
+    width: 200px;
+    border-radius: 50%;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad .SectionTwo__Plat__img__salad {
+    width: 30 0px;
+    border-radius: 50%;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
+    width: 200px;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__background {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    display: none;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__div__container {
+    display: grid;
+    grid-template-rows: 70px 70px;
+    grid-template-columns: repeat(6, 15%);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 7px;
+    margin-top: 70px;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__logo {
+    width: 7px;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
+    background-color: white;
+    border-radius: 10px;
+    height: 80%;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Marin {
+    width: 15px;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
+    font-size: 10px;
+  }
+  .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__p1 {
+    font-size: 5px;
+  }
+  .SectionTwo__Menu__header::after {
+    position: absolute;
+    left: 0;
+    content: "CATEGORY";
+    font-size: 30px;
+    opacity: 5%;
+  }
+}
 .SectionThree__Choose__div__header::after {
   position: absolute;
   left: 0;
