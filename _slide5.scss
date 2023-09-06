@@ -1,5 +1,6 @@
-.SectionFive__Restaurant::before {
+.SectionFive__Restaurant__div__header::after {
     position: absolute;
+    left: 0;
     content: "GALLERY";
     font-size: 30px;
     opacity: 5%;
@@ -8,7 +9,10 @@
 .SectionFive__Restaurant {
     padding-top: 30px;
     .SectionFive__Restaurant__div__header {
-        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         .SectionFive__Restaurant__div__header__h2 {
             font-size: 10px;
         }

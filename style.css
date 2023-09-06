@@ -103,15 +103,12 @@
   width: 20px;
 }
 
-.SectionTwo__Menu::before {
-  position: absolute;
-  content: "CATEGORY";
-  opacity: 5%;
-  font-size: 30px;
-}
-
 .SectionTwo__Menu {
-  margin-top: 0px;
+  background-image: url("img/banner/imgbgcategory.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(218, 165, 32, 0.5);
+  z-index: 99;
 }
 .SectionTwo__Menu .SectionTwo__Plat {
   display: flex;
@@ -136,10 +133,10 @@
   width: 100px;
 }
 .SectionTwo__Menu .SectionTwo__Menu__background {
-  position: absolute;
-  filter: sepia(100%) invert(3%);
+  position: relative;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
+  display: none;
 }
 .SectionTwo__Menu .SectionTwo__Menu__div__container {
   display: grid;
@@ -165,8 +162,10 @@
   width: 15px;
 }
 .SectionTwo__Menu .SectionTwo__Menu__header {
-  text-align: center;
-  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
   font-size: 10px;
@@ -175,8 +174,17 @@
   font-size: 5px;
 }
 
-.SectionThree__Choose::before {
+.SectionTwo__Menu__header::after {
   position: absolute;
+  left: 0;
+  content: "CATEGORY";
+  font-size: 30px;
+  opacity: 5%;
+}
+
+.SectionThree__Choose__div__header::after {
+  position: absolute;
+  left: 0;
   content: "ABOUT US";
   font-size: 30px;
   opacity: 5%;
@@ -194,7 +202,9 @@
   width: 100%;
 }
 .SectionThree__Choose .SectionThree__Choose__div__header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-image: url("img/about-us/iconbgabout.png");
   background-repeat: no-repeat;
   background-position: 90%;
@@ -212,9 +222,10 @@
   width: 50px;
 }
 
-.SectionFour__OurMenu::before {
+.SectionFour__OurMenu__div__header::after {
   content: "OUR MENU";
   position: absolute;
+  left: 0;
   font-size: 30px;
   opacity: 5%;
 }
@@ -233,7 +244,9 @@
   width: 70px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__h2 {
   font-size: 10px;
@@ -414,8 +427,9 @@
   font-size: 7px;
 }
 
-.SectionFive__Restaurant::before {
+.SectionFive__Restaurant__div__header::after {
   position: absolute;
+  left: 0;
   content: "GALLERY";
   font-size: 30px;
   opacity: 5%;
@@ -425,7 +439,10 @@
   padding-top: 30px;
 }
 .SectionFive__Restaurant .SectionFive__Restaurant__div__header {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__h2 {
   font-size: 10px;
@@ -455,7 +472,9 @@
 }
 .SectionSix__OurChefs .SectionSix__OurChefs__div__header {
   color: #fff;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-top: 10%;
 }
 .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__h2 {
@@ -481,13 +500,13 @@
   width: 90%;
 }
 
-.SectionSix__OurChefs:before {
+.SectionSix__OurChefs__div__header:after {
   position: absolute;
+  left: 0;
   content: "OUR CHEFS";
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   opacity: 5%;
-  padding-top: 10%;
 }
 
 /*Variables Color */
@@ -500,14 +519,18 @@
 }
 .SectionSeven .SectionSeven__div__header {
   color: #000;
-  text-align: center;
-  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10% 0;
 }
 .SectionSeven .SectionSeven__div__header .SectionSeven__div__header__h2 {
   font-size: 20px;
+  margin: 0;
 }
 .SectionSeven .SectionSeven__div__header .SectionSeven__div__header__p {
-  font-size: 14px;
+  font-size: 10px;
+  margin: 0;
 }
 .SectionSeven .SectionSeven__div__body {
   display: grid;
@@ -573,7 +596,7 @@
 }
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__footer .SectionSeven__div__body__footer__button .SectionSeven__div__body__one__footer__button__logo {
   height: 10px;
-  Padding: 0 5px;
+  padding: 0 5px;
 }
 .SectionSeven .SectionSeven__div__footer {
   display: grid;
@@ -585,13 +608,13 @@
   height: 85%;
 }
 
-.SectionSeven:before {
+.SectionSeven__div__header:after {
   position: absolute;
+  left: 0;
   content: "OUR BLOG";
-  font-size: 60px;
-  color: #F5EEE3;
+  font-size: 40px;
+  color: #000;
   opacity: 5%;
-  padding-top: 10%;
 }
 
 /*Variables Color */
