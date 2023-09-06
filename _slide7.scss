@@ -22,73 +22,75 @@
     }
     /*Article*/
     .SectionSeven__div__body{
-        display: grid;
-        grid-template:2.5f 0.5f 1f 1f / 100%;
-        background-color: $color_background;
-        grid-gap: 10px;
-        padding-bottom: 5%;
-        /*
-        .SectionSeven__div__body__img{
-            .SectionSeven__div__body__img__photo{
-
-            }
-        }
-        */
-        .SectionSeven__div__body__credit{
-            display: flex;
-            flex-direction: row;
-            gap:5%;
-            padding-top:5%;
-            padding-left:5%;
-            .SectionSeven__div__body__credit__by{
-                display: flex;
-                flex-direction: row;
-                align-self:center;
-                .SectionSeven__div__body__credit__by__logo{
-                    height:20px;
-                }
-                .SectionSeven__div__body__credit__by__p{
-                    font-size:12px;
-                    margin:0;
-                }
-            }
-            .SectionSeven__div__body__credit__date{
-                display: flex;
-                flex-direction: row;
-                align-self:center;
-                .SectionSeven__div__body__credit__date__logo{
-                    height:20px;
-                }
-                .SectionSeven__div__body__credit__date__p{
-                    font-size:12px;
-                    margin:0;
-                }
-            }
-        }
-        .SectionSeven__div__body__text{
-            padding:5%;
-            .SectionSeven__div__body__text__p{
-                font-size:15px;
-            }
-        }
-        .SectionSeven__div__body__footer{
-            display:flex;
-            flex-direction:row;
-            align-items: center;
-            padding:0% 5% 5% 5%;
-            .SectionSeven__div__body__footer__button{
-                font-size:13px;
-                padding:2%;
-                background-color: white;
-                border: none;
-                border-radius: 5px;
-                .SectionSeven__div__body__one__footer__button__logo{
-                    height:10px;
-                    padding:0 5px;
-                }
-            }
-        }
+        .SectionSeven__div__body__blog{
+            display: grid;
+            grid-template:2.5f 0.5f 1f 1f / 100%;
+            background-color: $color_background;
+            grid-gap: 10px;
+            padding-bottom: 5%;
+            /*
+            .SectionSeven__div__body__blog__img{
+                .SectionSeven__div__body__blog__img__photo{
     
+                }
+            }
+            */
+            .SectionSeven__div__body__blog__credit{
+                display: flex;
+                flex-direction: row;
+                gap:5%;
+                padding-top:5%;
+                padding-left:5%;
+                .SectionSeven__div__body__blog__credit__by{
+                    display: flex;
+                    flex-direction: row;
+                    align-self:center;
+                    .SectionSeven__div__body__blog__credit__by__logo{
+                        height:20px;
+                    }
+                    .SectionSeven__div__body__blog__credit__by__p{
+                        font-size:12px;
+                        margin:0;
+                    }
+                }
+                .SectionSeven__div__body__blog__credit__date{
+                    display: flex;
+                    flex-direction: row;
+                    align-self:center;
+                    .SectionSeven__div__body__blog__credit__date__logo{
+                        height:20px;
+                    }
+                    .SectionSeven__div__body__blog__credit__date__p{
+                        font-size:12px;
+                        margin:0;
+                    }
+                }
+            }
+            .SectionSeven__div__body__blog__text{
+                padding:5%;
+                .SectionSeven__div__body__blog__text__p{
+                    font-size:15px;
+                }
+            }
+            .SectionSeven__div__body__blog__footer{
+                display:flex;
+                flex-direction:row;
+                align-items: center;
+                padding:0% 5% 5% 5%;
+                .SectionSeven__div__body__blog__footer__button{
+                    font-size:13px;
+                    padding:2%;
+                    background-color: white;
+                    border: none;
+                    border-radius: 5px;
+                    .SectionSeven__div__body__blog__footer__button__logo{
+                        height:10px;
+                        padding:0 5px;
+                    }
+                }
+            }
+        
+        }
     }
     /*fin de article*/
     .SectionSeven__div__footer{
@@ -100,7 +102,7 @@
             width: fit-content;
             height: fit-content;
             .SectionSeven__div__footer__div__img{
-                height: 85%;
+                width: 100%;
             }
         }
         
@@ -113,4 +115,82 @@
     font-size:40px;
     color:$color_black;
     opacity:5%;
+}
+
+@media only screen and (min-width:410px){
+    .SectionSeven{
+        .SectionSeven__div__header{
+            .SectionSeven__div__header__h2{
+                font-size:25px;
+            }
+            .SectionSeven__div__header__p{
+                font-size:15px;
+            }
+        }
+        .SectionSeven__div__body{
+            display:flex;
+            flex-direction: row;
+            margin-left:5%;
+            .SectionSeven__div__body__blog{
+                .SectionSeven__div__body__blog__img{
+                    .SectionSeven__div__body__blog__img__photo{
+                        width:90%;
+                    }
+                }
+                .SectionSeven__div__body__blog__credit{
+                    .SectionSeven__div__body__blog__credit__by{
+                        .SectionSeven__div__body__blog__credit__by__logo{
+                            height:10px;
+                        }
+                        .SectionSeven__div__body__blog__credit__by__p{
+                            font-size:8px;
+                        }
+                    }
+                    .SectionSeven__div__body__blog__credit__date{
+                        .SectionSeven__div__body__blog__credit__date__logo{
+                            height:10px;
+                        }
+                        .SectionSeven__div__body__blog__credit__date__p{
+                            font-size:8px;
+                        }
+                    }
+                }
+                .SectionSeven__div__body__blog__text{
+                    .SectionSeven__div__body__blog__text__p{
+                        font-size:10px;
+                    }
+                }
+                .SectionSeven__div__body__blog__footer{
+                    .SectionSeven__div__body__blog__footer__button{
+                        font-size:8px;
+                        padding:5%;
+                        background-color: white;
+                        border: none;
+                        border-radius: 5px;
+                        .SectionSeven__div__body__blog__footer__button__logo{
+                            height:8px;
+                            padding:0 5px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .SectionSeven__div__footer{
+            display:grid;
+            grid-template-columns: repeat(6, 16%);
+            grid-gap:3%;
+            padding:5%;
+            .SectionSeven__div__footer__div{
+                .SectionSeven__div__footer__div__img{
+                    width: 50%;
+                }
+            }
+    }
+    
+        
+    }
+    .SectionSeven__div__header:after{
+        font-size:50px;
+    }
 }
