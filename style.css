@@ -654,110 +654,137 @@
 }
 
 /*Variables Color */
-/* .footer{
-    .footer__background{
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-    }
-    .footer__div__header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .footer__div__header__img{
-            width: 20%;
-        }
-        .footer__div__header__h2{
+.footer {
+  color: gray;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.footer .footer__div__header {
+  display: flex;
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__div__header .footer__div__header__img {
+  width: 20%;
+}
+.footer .footer__div__about .footer__div__about__h2 {
+  font-size: 10px;
+  color: white;
+}
+.footer .footer__div__about .footer__div__about__ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer .footer__div__about .footer__div__about__ul .footer__div__about__ul__li {
+  list-style-type: none;
+  padding: 0;
+  font-size: 5px;
+}
+.footer .footer__div__facilities .footer__div__facilities__h2 {
+  font-size: 10px;
+  color: white;
+}
+.footer .footer__div__facilities .footer__div__facilities__ul {
+  padding: 0;
+}
+.footer .footer__div__facilities .footer__div__facilities__ul .footer__div__facilities__ul__li {
+  list-style-type: none;
+  padding: 0;
+  font-size: 5px;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__h2 {
+  font-size: 10px;
+  color: white;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__p {
+  font-size: 5px;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__body__email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text {
+  background-color: white;
+  color: gray;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text .footer__div__newsletters__body__email__text__p {
+  font-size: 5px;
+}
+.footer .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__arrow .footer__div__newsletters__body__email__arrow__logo {
+  width: 5px;
+  background-color: goldenrod;
+  padding: 5px;
+}
+.footer .footer__div__contact .footer__div__contact__h2 {
+  font-size: 10px;
+  color: white;
+}
+.footer .footer__div__contact .footer__div__contact__ul {
+  padding: 0;
+}
+.footer .footer__div__contact .footer__div__contact__ul .footer__div__contact__ul__li {
+  list-style-type: none;
+  font-size: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__div__contact .footer__div__contact__ul .footer__div__contact__li__logo {
+  width: 5px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p {
+  font-size: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__strong {
+  font-style: normal;
+  color: goldenrod;
+}
+.footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__logo {
+  width: 3px;
+}
+.footer .footer__div__footer .footer__div__footer__spoon {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .footer__div__footer .footer__div__footer__spoon .footer__div__footer__spoon__img {
+  width: 5%;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb .footer__div__footer__socials__fb__logo {
+  width: 5px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X .footer__div__footer__socials__X__logo {
+  width: 5px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb .footer__div__footer__socials__ytb__logo {
+  width: 5px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln .footer__div__footer__socials__Ln__logo {
+  width: 5px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+}
 
-        }
-    }   
-    .footer__div__about{
-        .footer__div__about__h2{
-
-        }
-        .footer__div__about__ul{
-            .footer__div__about__ul__li{
-
-            }
-        }
-    } 
-    .footer__div__facilities{
-        .footer__div__facilities__h2{
-
-        }
-        .footer__div__facilities__ul{
-            .footer__div__facilities__ul__li{
-
-            }
-        }
-    }
-    .footer__div__newsletters{
-        .footer__div__newsletters__header{
-            .footer__div__newsletters__header__h2{
-
-            }
-            .footer__div__newsletters__header__p{
-
-            }
-        }
-        .footer__div__newsletters__body__email{
-            .footer__div__newsletters__body__email__text{
-                .footer__div__newsletters__body__email__text__p{
-
-                }
-                .footer__div__newsletters__body__email__arrow{
-                    .footer__div__newsletters__body__email__arrow__logo{
-
-                    }
-                }
-            }
-        }    
-    }
-    .footer__div__contact{
-        .footer__div__contact__h2{
-
-        }
-        .footer__div__contact__ul{
-            .footer__div__contact__ul__li{
-
-            }
-        }
-    }
-    .footer__div__footer{
-        .footer__div__footer__copyright{
-            .footer__div__footer__copyright__p{
-
-            }
-        }
-        .footer__div__footer__spoon{
-            .footer__div__footer__spoon__img{
-
-            }
-        }
-        .footer__div__footer__socials{
-            .footer__div__footer__socials__fb{
-                .footer__div__footer__socials__fb__logo{
-
-                }
-            }
-            .footer__div__footer__socials__X{
-                .footer__div__footer__socials__X__logo{
-
-                }
-            }
-            .footer__div__footer__socials__ytb{
-                .footer__div__footer__socials__ytb__logo{
-
-                }
-            }
-            .footer__div__footer__socials__Ln{
-                .footer__div__footer__socials__Ln__logo{
-
-                }
-            }
-        }
-    }
-} */
 /*Variables Color */
 body {
   margin: 0;
