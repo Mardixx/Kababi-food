@@ -450,18 +450,42 @@
 .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__p {
   font-size: 5px;
 }
-.SectionFive__Restaurant .SectionFive__Restaurant__div__body__one {
-  display: flex;
-  flex-direction: column;
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: repeat(4, 20%);
+  grid-gap: 1rem;
   justify-content: center;
-  align-items: center;
 }
-.SectionFive__Restaurant .SectionFive__Restaurant__div__body__one .SectionFive__Restaurant__div__body__one__img {
-  background-color: rgba(0, 0, 0, 0.2);
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__one .SectionFive__Restaurant__div__body__one__img__background {
+  width: 100%;
+  padding-top: 3rem;
 }
-.SectionFive__Restaurant .SectionFive__Restaurant__div__body__one .SectionFive__Restaurant__div__body__one__img__background {
-  width: 300px;
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__two {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__two .SectionFive__Restaurant__div__body__two__img {
+  width: 100%;
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__three {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__three .SectionFive__Restaurant__div__body__three__img {
+  width: 100%;
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__four .SectionFive__Restaurant__div__body__four__img {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /*Variables Color */
