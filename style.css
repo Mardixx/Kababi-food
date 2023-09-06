@@ -545,6 +545,47 @@
   opacity: 5%;
 }
 
+@media only screen and (min-width: 410px) {
+  .SectionSix__OurChefs {
+    max-height: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #fff 0, 1%, #000 100%);
+  }
+  .SectionSix__OurChefs .SectionSix__OurChefs__div__header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+  }
+  .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__h2 {
+    font-size: 25px;
+  }
+  .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__p {
+    font-size: 15px;
+  }
+  .SectionSix__OurChefs__div__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* quatres colonnes */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 8%;
+  }
+  .SectionSix__OurChefs__div__body .SectionSix__OurChefs__div__body__container__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .SectionSix__OurChefs__div__header:after {
+    position: absolute;
+    left: 0;
+    content: "OUR CHEFS";
+    font-size: 40px;
+    color: #fff;
+    opacity: 5%;
+  }
+}
 /*Variables Color */
 .SectionSeven {
   max-height: 100%;
