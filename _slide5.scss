@@ -67,5 +67,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        .SectionFive__Restaurant__div__footer__button {
+            margin-bottom: 1rem;
+            font-size: 10px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+
+            .SectionFive__Restaurant__div__footer__button__logo {
+                width: 5%;
+            }
+        }
     }
 }

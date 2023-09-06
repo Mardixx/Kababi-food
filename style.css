@@ -210,6 +210,7 @@
   background-position: 90%;
   padding-bottom: 25px;
   background-size: 10%;
+  padding-top: 1rem;
 }
 .SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__h2 {
   font-size: 10px;
@@ -247,6 +248,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 1rem;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__h2 {
   font-size: 10px;
@@ -487,6 +489,16 @@
   justify-content: center;
   flex-direction: row;
 }
+.SectionFive__Restaurant .SectionFive__Restaurant__div__footer .SectionFive__Restaurant__div__footer__button {
+  margin-bottom: 1rem;
+  font-size: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.SectionFive__Restaurant .SectionFive__Restaurant__div__footer .SectionFive__Restaurant__div__footer__button .SectionFive__Restaurant__div__footer__button__logo {
+  width: 5%;
+}
 
 /*Variables Color */
 .SectionSix__OurChefs {
@@ -642,14 +654,18 @@
 }
 
 /*Variables Color */
-/*
-.footer{
+/* .footer{
     .footer__background{
-
+        width: 100%;
+        position: absolute;
+        z-index: -1;
     }
     .footer__div__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .footer__div__header__img{
-
+            width: 20%;
         }
         .footer__div__header__h2{
 
@@ -741,7 +757,7 @@
             }
         }
     }
-}*/
+} */
 /*Variables Color */
 body {
   margin: 0;

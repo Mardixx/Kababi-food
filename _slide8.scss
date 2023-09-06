@@ -1,12 +1,17 @@
 @import '_variables.scss';
-/*
-.footer{
-    .footer__background{
 
+/* .footer{
+    .footer__background{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
     }
     .footer__div__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .footer__div__header__img{
-
+            width: 20%;
         }
         .footer__div__header__h2{
 
@@ -98,4 +103,4 @@
             }
         }
     }
-}*/
+} */
