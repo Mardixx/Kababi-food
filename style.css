@@ -515,9 +515,11 @@
 }
 .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__h2 {
   font-size: 20px;
+  margin-bottom: 0;
 }
 .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__p {
   font-size: 10px;
+  margin-top: 0;
 }
 
 .SectionSix__OurChefs__div__body {
@@ -556,13 +558,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 0%;
   }
   .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__h2 {
     font-size: 25px;
   }
   .SectionSix__OurChefs .SectionSix__OurChefs__div__header .SectionSix__OurChefs__div__header__p {
-    font-size: 15px;
+    font-size: 10px;
   }
   .SectionSix__OurChefs__div__body {
     display: grid;
@@ -581,9 +583,10 @@
     position: absolute;
     left: 0;
     content: "OUR CHEFS";
-    font-size: 40px;
+    font-size: 50px;
     color: #fff;
     opacity: 5%;
+    padding-top: 3%;
   }
 }
 /*Variables Color */
