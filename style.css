@@ -578,6 +578,7 @@
     opacity: 5%;
   }
 }
+/*Variables Color */
 .SectionThree__Choose__div__header::after {
   position: absolute;
   left: 0;
@@ -965,7 +966,6 @@
     margin: 0;
     background-color: #fff;
     border-radius: 5px;
-    border: 1px dotted rgb(197, 170, 104);
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -1118,7 +1118,33 @@
     font-size: 10px;
   }
 }
-@media only screen and (min-width: 718px) {
+@media only screen and (min-width: 768px) {
+  .SectionFour__OurMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__steak {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: 250px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__steak .SectionFour__OurMenu__div_steak_img {
+    width: 110px;
+    margin-bottom: 100px;
+    display: block;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__bread {
+    display: block;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__bread .SectionFour__OurMenu__div__bread__img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    z-index: -1;
+  }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__header {
     display: flex;
     align-items: center;
@@ -1132,6 +1158,10 @@
   .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__p {
     font-size: 10px;
     margin: 0;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu {
+    max-width: 80%;
+    width: 80%;
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__price .SectionFour__OurMenu__div__menu__raw__price__p {
     font-size: 25px;
@@ -1514,6 +1544,7 @@
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__credit {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 5%;
   padding-left: 5%;
 }

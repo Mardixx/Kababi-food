@@ -353,7 +353,6 @@
                 margin: 0;
                 background-color: $color_white;
                 border-radius: 5px;
-                border: 1px dotted rgba(197,170,104,255);
                 flex-direction: row;
                 justify-content: space-evenly;
                 align-items: center;
@@ -561,9 +560,44 @@
         }
     }
 }
-@media only screen and (min-width: 718px) {
+@media only screen and (min-width: 768px) {
+    
     
     .SectionFour__OurMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .SectionFour__OurMenu__div__steak {
+           
+            display: block;
+            position: absolute;
+            left: 0;
+            margin-top: 250px;
+            
+
+            .SectionFour__OurMenu__div_steak_img {
+                width: 110px;
+                
+                margin-bottom: 100px;
+                display: block;
+               
+            }
+        }
+
+        .SectionFour__OurMenu__div__bread {
+            display: block;
+    
+            .SectionFour__OurMenu__div__bread__img {
+                display: block;
+                position: absolute;
+                right: 0;
+                width: 300px;
+                z-index: -1;
+    
+    
+            }
+        }
     
         .SectionFour__OurMenu__div__header {
             display: flex;
@@ -582,7 +616,8 @@
             }
         }
         .SectionFour__OurMenu__div__menu {
-            
+            max-width: 80%;
+            width: 80%;
             .SectionFour__OurMenu__div__menu__raw {                        
     
                 .SectionFour__OurMenu__div__menu__raw__price {
