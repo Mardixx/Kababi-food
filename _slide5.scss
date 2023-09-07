@@ -80,3 +80,89 @@
         }
     }
 }
+
+@media only screen and (min-width: 410px) {
+    .SectionFive__Restaurant__div__header::after {
+        position: absolute;
+        left: 0;
+        content: "GALLERY";
+        font-size: 50px;
+        opacity: 5%;
+    }
+    
+    .SectionFive__Restaurant {
+        padding-top: 30px;
+    
+        .SectionFive__Restaurant__div__header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+    
+            .SectionFive__Restaurant__div__header__h2 {
+                font-size: 15px;
+            }
+    
+            .SectionFive__Restaurant__div__header__p {
+                font-size: 10px;
+            }
+        }
+    
+        .SectionFive__Restaurant__div__body {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: repeat(2, 45%);
+            grid-gap: 1rem;
+    
+            .SectionFive__Restaurant__div__body__one {
+                .SectionFive__Restaurant__div__body__one__img__background {
+                    width: 100%;
+                    padding-top: 3rem;
+                }
+    
+            }
+            .SectionFive__Restaurant__div__body__two {
+                display: grid;
+                grid-gap: 1rem;
+                height: fit-content;
+                padding-top: 3rem;
+                grid-template-columns: repeat(2, 1fr);
+    
+                .SectionFive__Restaurant__div__body__two__img {
+                    width: 100%;
+                }
+            }
+            .SectionFive__Restaurant__div__body__three {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                .SectionFive__Restaurant__div__body__three__img {
+                    width: 100%;
+                }
+            }
+            .SectionFive__Restaurant__div__body__four {
+                .SectionFive__Restaurant__div__body__four__img {
+                    width: 100%;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+        .SectionFive__Restaurant__div__footer {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            .SectionFive__Restaurant__div__footer__button {
+                margin-bottom: 1rem;
+                font-size: 15px;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid lightgrey;
+    
+                .SectionFive__Restaurant__div__footer__button__logo {
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

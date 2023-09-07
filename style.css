@@ -1,12 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import "normalize.css";
 .header {
   max-width: 100%;
   background-color: blue;
   background-image: url("img/slider/img_bg_slider_home01.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   color: white;
 }
 .header .header-div {
@@ -33,9 +34,11 @@
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
+  color: white;
 }
 .header .header-div .header-arrow {
-  width: 10px;
+  width: 7px;
+  filter: invert(100%);
 }
 .header .header-div-h1 {
   font-family: "Cinzel", serif;
@@ -83,18 +86,25 @@
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-size: 7px;
 }
-.header .header-div-nav .header-unlisted-list2 .header-button-bookatable {
-  margin-left: 0px;
-  width: 50px;
-  font-size: 7px;
-}
 .header .header-div-nav .header-unlisted-list2 .header-list {
   display: flex;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-div-nav .header-unlisted-list2 .header-list .header-button-bookatable {
+  width: 70px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 7px;
+  color: white;
+  background-color: rgb(197, 170, 104);
+  border: none;
 }
 .header .header-div-nav .header-unlisted-list2 .header-list .header-phone-number {
   font-size: 7px;
@@ -103,75 +113,32 @@
   width: 20px;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 410px) {
   .header {
     max-width: 100%;
     width: 100%;
     background-color: blue;
     background-image: url("img/slider/img_bg_slider_home01.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .header .header-div {
-    padding: 15px;
-  }
-  .header .header-div .header-div-play {
-    margin: 19% 15%;
-    background-color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-image: url("img/logo/bouton-jouer.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
-  }
-  .header .header-div .header-explore-button {
-    display: flex;
-    align-self: flex-end;
-    font-size: 30px;
-    width: -moz-fit-content;
-    width: fit-content;
-    color: white;
-    background-color: transparent;
-    margin-top: 30px;
-  }
-  .header .header-div .header-arrow {
-    width: 30px;
-    filter: invert(100%);
-  }
-  .header .header-div-h1 {
-    font-family: "Cinzel", serif;
-    width: 250px;
-    height: 150px;
-  }
-  .header .header-div-h1 h1 {
-    background-image: url("img/slider/img_bg2.png");
-    background-size: 50%;
-    color: white;
     background-repeat: no-repeat;
-    font-size: 50px;
-    background-position: top right;
   }
   .header .header-div-nav {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .header .header-div-nav .header-nav-bar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    width: 90%;
   }
   .header .header-div-nav .header-logo-kababi {
-    width: 54px;
-    height: 18px;
+    width: 100px;
+    height: auto;
   }
   .header .header-div-nav .header-unlisted-list {
-    display: flex;
-  }
-  .header .header-div-nav .header-unlisted-list .header-list {
-    display: flex;
-    gap: 0.625rem;
+    gap: 1rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
   }
   .header .header-div-nav .header-unlisted-list2 {
     display: flex;
@@ -181,34 +148,96 @@
     padding: 0;
     font-size: 7px;
   }
+  .header .header-div-nav .header-unlisted-list2 .header-phone-number {
+    font-size: 7px;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list-phone {
+    width: 20px;
+  }
   .header .header-div-nav .header-unlisted-list2 .header-button-bookatable {
     margin-left: 0px;
     width: 50px;
-    font-size: 7px;
+    font-size: 15px;
   }
   .header .header-div-nav .header-unlisted-list2 .header-list {
     display: flex;
     align-self: center;
   }
-  .header .header-div-nav .header-unlisted-list2 .header-list .header-phone-number {
-    font-size: 7px;
+  .header .header-div {
+    padding: 25px;
   }
-  .header .header-div-nav .header-unlisted-list2 .header-list .header-list-phone {
-    width: 20px;
+  .header .header-div .header-div-play {
+    margin: 19% 15%;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/logo/bouton-jouer.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .header .header-div .header-explore-button {
+    display: flex;
+    align-self: flex-end;
+    font-size: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    background-color: transparent;
+    margin-top: 30px;
+  }
+  .header .header-div .header-explore-button .header-arrow {
+    width: 10px;
+    height: 10px;
+    filter: invert(100%);
+  }
+  .header .header-div .header-arrow {
+    width: 7px;
+    height: 7px;
+    filter: invert(100%);
+  }
+  .header .header-div-h1 {
+    font-family: "Cinzel", serif;
+    width: 250px;
+    height: 150px;
+  }
+  .header .header-div-h1 h1 {
+    background-image: url("img/slider/img_bg2.png");
+    background-size: 20%;
+    color: white;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    background-position: top right;
   }
 }
-.SectionTwo__Menu {
-  background-image: url("img/banner/imgbgcategory.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: rgba(218, 165, 32, 0.5);
+.SectionTwo__Menu__header::after {
+  position: absolute;
+  left: 0;
+  content: "CATEGORY";
+  font-size: 30px;
+  opacity: 5%;
   z-index: 99;
+}
+
+.SectionTwo__Menu::before {
+  position: absolute;
+  background: rgba(218, 165, 32, 0.5);
+  background-size: 100%;
+}
+
+.SectionTwo__Menu .SectionTwo__Menu__background {
+  position: absolute;
+  background-color: rgba(218, 165, 32, 0.5);
+  width: 100%;
+  opacity: 100%;
+  z-index: -1;
 }
 .SectionTwo__Menu .SectionTwo__Plat {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
 }
 .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
   width: 100px;
@@ -225,12 +254,6 @@
 }
 .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
   width: 100px;
-}
-.SectionTwo__Menu .SectionTwo__Menu__background {
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  display: none;
 }
 .SectionTwo__Menu .SectionTwo__Menu__div__container {
   display: grid;
@@ -268,31 +291,22 @@
   font-size: 5px;
 }
 
-.SectionTwo__Menu__header::after {
-  position: absolute;
-  left: 0;
-  content: "CATEGORY";
-  font-size: 30px;
-  opacity: 5%;
-}
-
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 410px) {
   .SectionTwo__Menu {
     background-image: url("img/banner/imgbgcategory.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: rgba(218, 165, 32, 0.5);
-    z-index: 99;
   }
   .SectionTwo__Menu .SectionTwo__Plat {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
     width: 200px;
     border-radius: 50%;
+    margin-top: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad {
     background-color: #fff;
@@ -300,11 +314,12 @@
     padding: 10px;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad .SectionTwo__Plat__img__salad {
-    width: 30 0px;
+    width: 300px;
     border-radius: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
     width: 200px;
+    margin-top: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Menu__background {
     position: relative;
@@ -314,18 +329,18 @@
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container {
     display: grid;
-    grid-template-rows: 70px 70px;
-    grid-template-columns: repeat(6, 15%);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
     font-size: 7px;
-    margin-top: 70px;
+    margin: 70px 50px 0px 50px;
+    font-size: 10px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__logo {
-    width: 7px;
+    width: 10px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
     background-color: white;
@@ -333,7 +348,7 @@
     height: 80%;
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Marin {
-    width: 15px;
+    width: 30px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header {
     width: 100%;
@@ -342,16 +357,16 @@
     flex-direction: column;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__p1 {
-    font-size: 5px;
+    font-size: 10px;
   }
   .SectionTwo__Menu__header::after {
     position: absolute;
     left: 0;
     content: "CATEGORY";
-    font-size: 30px;
+    font-size: 60px;
     opacity: 5%;
   }
 }
@@ -363,6 +378,9 @@
   opacity: 5%;
 }
 
+.SectionThree__Choose {
+  font-family: "Forum", cursive;
+}
 .SectionThree__Choose .SectionThree__Choose__div__body {
   display: grid;
   gap: 30px;
@@ -370,6 +388,15 @@
   grid-template-columns: repeat(2, 40%);
   justify-content: center;
   font-size: 12px;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
+  font-size: 20px;
+  background-color: rgb(197, 170, 104);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 10px;
 }
 .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
   width: 100%;
@@ -396,6 +423,56 @@
   width: 50px;
 }
 
+@media only screen and (min-width: 410px) {
+  .SectionThree__Choose__div__header::after {
+    position: absolute;
+    left: 0;
+    content: "ABOUT US";
+    font-size: 50px;
+    opacity: 5%;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__body {
+    display: grid;
+    gap: 30px;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    font-size: 12px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body__text__p {
+    font-size: 20px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body___text__button {
+    font-size: 20px;
+    background-color: rgb(197, 170, 104);
+    color: white;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/about-us/iconbgabout.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    padding-bottom: 25px;
+    background-size: 10%;
+    padding-top: 1rem;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__h2 {
+    font-size: 15px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__p {
+    font-size: 10px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__logo .SectionThree__Choose__div__logo__img {
+    float: right;
+    width: 50px;
+  }
+}
 .SectionFour__OurMenu__div__header::after {
   content: "OUR MENU";
   position: absolute;
@@ -408,14 +485,9 @@
   background-color: rgba(217, 165, 32, 0.08);
   z-index: 99;
 }
-.SectionFour__OurMenu .SectionFour__OurMenu__div__steak {
-  position: absolute;
-  top: 0;
-  margin-top: 950px;
-  z-index: -1;
-}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__steak .SectionFour__OurMenu__div_steak_img {
   width: 70px;
+  display: none;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__header {
   display: flex;
@@ -429,14 +501,8 @@
 .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__p {
   font-size: 5px;
 }
-.SectionFour__OurMenu .SectionFour__OurMenu__div__bread {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__bread .SectionFour__OurMenu__div__bread__img {
-  display: flex;
-  align-items: center;
+  display: none;
   width: 150px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu {
@@ -602,6 +668,208 @@
   font-size: 7px;
 }
 
+@media only screen and (min-width: 410px) {
+  .SectionFour__OurMenu__div__header::after {
+    content: "OUR MENU";
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+    opacity: 5%;
+  }
+  .SectionFour__OurMenu {
+    background-color: rgba(217, 165, 32, 0.08);
+    z-index: 99;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__steak .SectionFour__OurMenu__div_steak_img {
+    width: 70px;
+    display: none;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__h2 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__bread {
+    display: none;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__bread .SectionFour__OurMenu__div__bread__img {
+    display: none;
+    width: 150px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu {
+    display: grid;
+    font-size: 10px;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(4, 10%);
+    padding: 50px 0;
+    grid-gap: 15px;
+    border-radius: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px dotted rgb(197, 170, 104);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__price .SectionFour__OurMenu__div__menu__raw__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__text .SectionFour__OurMenu__div__menu__raw__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__text .SectionFour__OurMenu__div__menu__raw__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__price .SectionFour__OurMenu__div__menu__correze__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__text .SectionFour__OurMenu__div__menu__correze__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__text .SectionFour__OurMenu__div__menu__correze__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__price .SectionFour__OurMenu__div__menu__celeriac__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__text .SectionFour__OurMenu__div__menu__celeriac__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__text .SectionFour__OurMenu__div__menu__celeriac__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__price .SectionFour__OurMenu__div__menu__grilled__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__text .SectionFour__OurMenu__div__menu__grilled__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__text .SectionFour__OurMenu__div__menu__grilled__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__price .SectionFour__OurMenu__div__menu__cod__price {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__text .SectionFour__OurMenu__div__menu__cod__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__text .SectionFour__OurMenu__div__menu__cod__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__price .SectionFour__OurMenu__div__menu__octopus__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__text .SectionFour__OurMenu__div__menu__octopus__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__text .SectionFour__OurMenu__div__menu__octopus__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__price .SectionFour__OurMenu__div__menu__bass__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__text {
+    width: 65%;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__text .SectionFour__OurMenu__div__menu__bass__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__text .SectionFour__OurMenu__div__menu__bass__text__p {
+    font-size: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__price .SectionFour__OurMenu__div__menu__viennese__price__p {
+    color: rgb(197, 170, 104);
+    margin-right: 10px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__text .SectionFour__OurMenu__div__menu__viennese__text__h3 {
+    font-size: 15px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__text .SectionFour__OurMenu__div__menu__viennese__text__p {
+    font-size: 10px;
+  }
+}
 .SectionFive__Restaurant__div__header::after {
   position: absolute;
   left: 0;
@@ -673,6 +941,79 @@
   width: 5%;
 }
 
+@media only screen and (min-width: 410px) {
+  .SectionFive__Restaurant__div__header::after {
+    position: absolute;
+    left: 0;
+    content: "GALLERY";
+    font-size: 50px;
+    opacity: 5%;
+  }
+  .SectionFive__Restaurant {
+    padding-top: 30px;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__h2 {
+    font-size: 15px;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__p {
+    font-size: 10px;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(2, 45%);
+    grid-gap: 1rem;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__one .SectionFive__Restaurant__div__body__one__img__background {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__two {
+    display: grid;
+    grid-gap: 1rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__two .SectionFive__Restaurant__div__body__two__img {
+    width: 100%;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__three {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__three .SectionFive__Restaurant__div__body__three__img {
+    width: 100%;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__body .SectionFive__Restaurant__div__body__four .SectionFive__Restaurant__div__body__four__img {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__footer .SectionFive__Restaurant__div__footer__button {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+  }
+  .SectionFive__Restaurant .SectionFive__Restaurant__div__footer .SectionFive__Restaurant__div__footer__button .SectionFive__Restaurant__div__footer__button__logo {
+    width: 15px;
+  }
+}
 /*Variables Color */
 .SectionSix__OurChefs {
   max-height: 100%;
@@ -939,7 +1280,7 @@
 .footer .footer__div {
   display: grid;
   line-height: 3;
-  grid-template-columns: 50%;
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 1rem;
 }
 .footer .footer__div .footer__div__about .footer__div__about__h2 {
@@ -959,7 +1300,7 @@
   font-size: 5px;
 }
 .footer .footer__div .footer__div__facilities .footer__div__facilities__h2 {
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   margin: 0;
 }
@@ -970,15 +1311,15 @@
 .footer .footer__div .footer__div__facilities .footer__div__facilities__ul .footer__div__facilities__ul__li {
   list-style-type: none;
   padding: 0;
-  font-size: 5px;
+  font-size: 10px;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__h2 {
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   margin: 0;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__p {
-  font-size: 5px;
+  font-size: 10px;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email {
   display: grid;
@@ -994,7 +1335,7 @@
   color: gray;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text .footer__div__newsletters__body__email__text__p {
-  font-size: 5px;
+  font-size: 10px;
   margin: 0;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__arrow {
@@ -1010,7 +1351,7 @@
   padding: 5px;
 }
 .footer .footer__div .footer__div__contact .footer__div__contact__h2 {
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   margin: 0;
 }
@@ -1020,7 +1361,7 @@
 }
 .footer .footer__div .footer__div__contact .footer__div__contact__ul .footer__div__contact__ul__li {
   list-style-type: none;
-  font-size: 5px;
+  font-size: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -1030,7 +1371,6 @@
 }
 .footer .footer__background {
   width: 100%;
-  height: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -1056,7 +1396,7 @@
   width: fit-content;
 }
 .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p {
-  font-size: 5px;
+  font-size: 10px;
 }
 .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__strong {
   font-style: normal;
@@ -1073,11 +1413,13 @@
   width: fit-content;
 }
 .footer .footer__div__footer .footer__div__footer__spoon .footer__div__footer__spoon__img {
-  width: 7%;
+  width: 20px;
   margin-left: 10px;
 }
 .footer .footer__div__footer .footer__div__footer__socials {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: row;
 }
 .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb .footer__div__footer__socials__fb__logo {
@@ -1110,6 +1452,6 @@ body {
   margin: 0;
   max-width: 100%;
   width: 100%;
-  font-family: "PT Serif", serif;
+  font-family: "Forum", cursive;
   font-weight: lighter;
 }/*# sourceMappingURL=style.css.map */

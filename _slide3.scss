@@ -6,6 +6,7 @@
     opacity: 5%;
 }
 .SectionThree__Choose {
+    font-family: 'Forum', cursive;
     .SectionThree__Choose__div__body {
         display: grid;
         gap: 30px;
@@ -13,6 +14,17 @@
         grid-template-columns: repeat(2, 40%);
         justify-content: center;
         font-size: 12px;
+        .SectionThree__Choose__div__body__text {
+            .SectionThree__Choose__div__body___text__button {
+                font-size: 20px;
+                background-color: rgba(197,170,104,255);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 10px;
+                padding: 10px;
+            }
+        }
 
         .SectionThree__Choose__div__body__img {
             width: 100%;
@@ -42,6 +54,69 @@
         .SectionThree__Choose__div__logo__img {
             float: right;
             width: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    .SectionThree__Choose__div__header::after {
+        position: absolute;
+        left: 0;
+        content: "ABOUT US";
+        font-size: 50px;
+        opacity: 5%;
+    }
+    .SectionThree__Choose {
+        
+        .SectionThree__Choose__div__body {
+            display: grid;
+            gap: 30px;
+            flex-direction: row;
+            grid-template-columns: repeat(2, 40%);
+            justify-content: center;
+            font-size: 12px;
+
+            .SectionThree__Choose__div__body__text {
+                .SectionThree__Choose__div__body__text__p {
+                    font-size: 20px;
+                }
+            }
+            .SectionThree__Choose__div__body___text__button {
+                font-size: 20px;
+                background-color: rgba(197,170,104,255);
+                color: white;
+            }
+    
+            .SectionThree__Choose__div__body__img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+        }
+        
+        .SectionThree__Choose__div__header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-image: url("img/about-us/iconbgabout.png");
+            background-repeat: no-repeat;
+            background-position: 90%;
+            padding-bottom: 25px;
+            background-size: 10%;
+            padding-top: 1rem;
+    
+            .SectionThree__Choose__div__header__h2 {
+                font-size: 15px;
+            }
+            .SectionThree__Choose__div__header__p {
+                font-size: 10px;
+            }
+        }
+        .SectionThree__Choose__div__logo {
+            .SectionThree__Choose__div__logo__img {
+                float: right;
+                width: 50px;
+            }
         }
     }
 }

@@ -2,8 +2,8 @@
     max-width: 100%;
     background-color: blue;
     background-image: url("img/slider/img_bg_slider_home01.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: white;
     
 
@@ -33,10 +33,12 @@
                 font-size: 10px;
                 width: fit-content;
                 background-color: transparent;
+                color: white;
             }
 
             .header-arrow {
-                width: 10px;
+                width: 7px;
+                filter: invert(100%);
             }
         }
         .header-div-h1 {
@@ -94,19 +96,25 @@
                 display: flex;
                 flex-direction: row;
                 list-style-type: none;
+                justify-content: center;
+                align-items: center;
                 margin: 0;
                 padding: 0;
                 font-size: 7px;
 
-                .header-button-bookatable {
-                    margin-left: 0px;
-                    width: 50px;
-                    font-size: 7px;
-                }
-
                 .header-list {
                     display: flex;
-                    align-self: center;
+                    align-items: center;
+                    justify-content: center;
+                    .header-button-bookatable {
+                        width: 70px;
+                       text-align: center;
+                        border-radius: 10px;
+                        font-size: 7px;
+                        color: white;
+                        background-color: rgba(197,170,104,255);
+                        border: none;
+                    }
 
                     .header-phone-number {
                         font-size: 7px;
@@ -123,28 +131,78 @@
     
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 410px) {
     .header {
         max-width: 100%;
         width: 100%;
         background-color: blue;
         background-image: url("img/slider/img_bg_slider_home01.jpg");
-        background-size: 100%;
+        background-size: cover;
+        background-position: center center;
         background-repeat: no-repeat;
+        
+        .header-div-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header-nav-bar {
+                width: 90%;
+            }
+
+            .header-logo-kababi {
+                width: 100px;
+                height: auto;
+
+            }
+
+            .header-unlisted-list {
+               gap: 1rem;
+               margin-right: 2rem;
+               margin-top: .5rem;
+            }
+
+            .header-unlisted-list2 {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-size: 7px;
+                .header-phone-number {
+                    font-size: 7px;
+                }
+
+                .header-list-phone {
+                    width: 20px;
+                }
+
+                .header-button-bookatable {
+                    margin-left: 0px;
+                    width: 50px;
+                    font-size: 15px;
+                }
+
+                .header-list {
+                    display: flex;
+                    align-self: center;
+
+                }
+            }
+        }
         
     
             .header-div {
-                padding: 15px;
+                padding: 25px;
     
                 .header-div-play {
                     
                     margin: 19% 15%;
                     background-color: white;
                     border-radius: 50%;
-                    width: 20px;
-                    height: 20px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url("img/logo/bouton-jouer.png");
-                    background-size: 50%;
+                    background-size: 30%;
                     background-repeat: no-repeat;
                     background-position: center center;
                     
@@ -154,15 +212,22 @@
                 .header-explore-button {
                     display: flex;
                     align-self: flex-end;
-                    font-size: 30px;
+                    font-size: 10px;
                     width: fit-content;
                     color: white;
                     background-color: transparent;
                     margin-top: 30px;
+                    .header-arrow {
+                        width: 10px;
+                        height: 10px;
+                        filter: invert(100%);
+                        
+                    }
                 }
     
                 .header-arrow {
-                    width: 30px;
+                    width: 7px;
+                    height: 7px;
                     filter: invert(100%);
                     
                 }
@@ -174,73 +239,12 @@
     
                 h1 {
                     background-image: url("img/slider/img_bg2.png");
-                    background-size: 50%;
+                    background-size: 20%;
                     color: white;
                     background-repeat: no-repeat;
                     font-size: 50px;
                     background-position: top right;
                 }
             }
-    
-            .header-div-nav {
-                display: flex;
-                flex-direction: row;
-    
-                .header-nav-bar {
-                    display: flex;
-                    flex-direction: row;
-                    
-                    width: 100%;
-                }
-    
-                .header-logo-kababi {
-                    width: 54px;
-                    height: 18px;
-    
-                }
-    
-                .header-unlisted-list {
-                    display: flex;
-                    
-    
-                    .header-list {
-                        display: flex;
-                        gap: .625rem;
-                     
-    
-                    }
-                }
-    
-                .header-unlisted-list2 {
-                    display: flex;
-                    flex-direction: row;
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    font-size: 7px;
-    
-                    .header-button-bookatable {
-                        margin-left: 0px;
-                        width: 50px;
-                        font-size: 7px;
-                    }
-    
-                    .header-list {
-                        display: flex;
-                        align-self: center;
-    
-                        .header-phone-number {
-                            font-size: 7px;
-                        }
-    
-                        .header-list-phone {
-                            width: 20px;
-                        }
-    
-                    }
-                }
-            }
-    
-        
     }
 }
