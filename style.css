@@ -16,6 +16,8 @@
 }
 .header .header-div .header-div-play {
   float: right;
+  border: 5px solid white;
+  margin: 50px;
   margin-top: 75px;
   margin-right: 55px;
   background-color: white;
@@ -100,9 +102,10 @@
 .header .header-div-nav .header-unlisted-list2 .header-list .header-button-bookatable {
   width: 70px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 7px;
   color: white;
+  height: 10px;
   background-color: rgb(197, 170, 104);
   border: none;
 }
@@ -158,6 +161,12 @@
     margin-left: 0px;
     width: 50px;
     font-size: 15px;
+    border-radius: 5px;
+    font-size: 7px;
+    color: white;
+    height: 20px;
+    background-color: rgb(197, 170, 104);
+    border: none;
   }
   .header .header-div-nav .header-unlisted-list2 .header-list {
     display: flex;
@@ -176,6 +185,7 @@
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center center;
+    border: 1px solid white;
   }
   .header .header-div .header-explore-button {
     display: flex;
@@ -186,6 +196,8 @@
     color: white;
     background-color: transparent;
     margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
   }
   .header .header-div .header-explore-button .header-arrow {
     width: 10px;
@@ -1128,7 +1140,7 @@
 }
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog {
   display: grid;
-  grid-template: 2.5f 0.5f 1f 1f/100%;
+  grid-template-rows: 1fr;
   background-color: #FAF6F0;
   grid-gap: 10px;
   padding-bottom: 5%;

@@ -24,7 +24,7 @@
     .SectionSeven__div__body{
         .SectionSeven__div__body__blog{
             display: grid;
-            grid-template:2.5f 0.5f 1f 1f / 100%;
+            grid-template-rows: 1fr;
             background-color: $color_background;
             grid-gap: 10px;
             padding-bottom: 5%;
