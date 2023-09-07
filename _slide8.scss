@@ -496,3 +496,256 @@
     }
 }
 }
+
+@media only screen and (min-width: 768px) {
+    @import '_variables.scss';
+
+.footer{
+    color: $color_gray;
+    .footer__div {
+        display: flex;
+        line-height: 2.5;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem 1rem;
+        .footer__div__about{
+        
+            .footer__div__about__h2{
+                font-size: 25px;
+                color: $color_white;
+                margin: 0;
+            }
+            .footer__div__about__ul{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+    
+                .footer__div__about__ul__li{
+                    list-style-type: none;
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        } 
+        .footer__div__facilities{
+            .footer__div__facilities__h2{
+                font-size: 25px;
+                color: $color_white;
+                margin: 0;
+            }
+            .footer__div__facilities__ul{
+                padding: 0;
+                margin: 0;
+                .footer__div__facilities__ul__li{
+                    list-style-type: none;
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+        .footer__div__newsletters{
+            .footer__div__newsletters__header{
+                .footer__div__newsletters__header__h2{
+                    font-size: 25px;
+                    color: $color_white;  
+                    margin: 0; 
+                }
+                .footer__div__newsletters__header__p{
+                    font-size: 20px;
+                }
+            }
+            .footer__div__newsletters__body__email{
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+                
+                .footer__div__newsletters__body__email__text{
+                    background-color: $color_white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $color_gray;
+                    height: 30px;
+                    width: 80%;
+                    .footer__div__newsletters__body__email__text__p{
+                        font-size: 25px;
+                        margin: 0;
+                        
+                        
+                    }
+                    }
+                    .footer__div__newsletters__body__email__arrow{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: fit-content;
+                        .footer__div__newsletters__body__email__arrow__logo{
+                            width: 20px;
+                            background-color: $color_button;
+                            padding: 5px;
+                        }
+                    }
+                
+            }    
+        }
+        .footer__div__contact{
+            .footer__div__contact__h2{
+                font-size: 25px;
+                color: $color_white;
+                margin: 0;
+            }
+            .footer__div__contact__ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .footer__div__contact__ul__li{
+                    list-style-type: none;
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .footer__div__contact__li__logo {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .footer__background{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .footer__div__header{
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+        justify-content: center;
+        .footer__div__header__img{
+            width: 10%;
+
+        }
+    }   
+    .footer__div__footer{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $color_gray;
+        height: 50px;  
+        
+        .footer__div__footer__copyright{
+            width: fit-content; 
+            .footer__div__footer__copyright__p{
+                font-size: 20px;
+                .footer__div__footer__copyright__p__strong {
+                    font-style: normal;
+                    color: $color_button;
+                }
+                .footer__div__footer__copyright__p__logo {
+                    width: 3px;
+                }
+            }
+        }
+        .footer__div__footer__spoon{
+            margin-right: 46%;
+
+            .footer__div__footer__spoon__img{
+                width: 100px;
+              
+            }
+        }
+        .footer__div__footer__socials{
+            position: absolute;
+            right: 0;
+            
+
+            .footer__div__footer__socials__fb{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color_white;
+                border-radius: 50%;
+                padding: 2px;
+                width: 25px; 
+                height: 25px;
+                &:hover{
+                    background-color:$color_button;
+                    color:$color_white;
+                    .footer__div__footer__socials__fb__logo{
+                        filter:invert(100%);
+                    }
+                }
+                .footer__div__footer__socials__fb__logo{  
+                    width: 15px; 
+                    height: 15px;
+                }
+            }
+            .footer__div__footer__socials__X{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color_white;
+                border-radius: 50%;
+                padding: 2px;
+                width: 25px; 
+                height: 25px;
+                &:hover{
+                    background-color:$color_button;
+                    color:$color_white;
+                    .footer__div__footer__socials__X__logo{
+                        filter:invert(100%);
+                    }
+                }
+                .footer__div__footer__socials__X__logo{
+                    width: 15px; 
+                    height: 15px;
+                }
+            }
+            .footer__div__footer__socials__ytb{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color_white;
+                border-radius: 50%;
+                padding: 2px;
+                width: 25px; 
+                height: 25px;
+                &:hover{
+                    background-color:$color_button;
+                    color:$color_white;
+                    .footer__div__footer__socials__ytb__logo{
+                        filter:invert(100%);
+                    }
+                }
+                .footer__div__footer__socials__ytb__logo{
+                    width: 15px; 
+                    height: 15px;
+                }
+            }
+            .footer__div__footer__socials__Ln{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color_white;
+                border-radius: 50%;
+                padding: 2px;
+                width: 25px; 
+                height: 25px;
+                &:hover{
+                    background-color:$color_button;
+                    color:$color_white;
+                    .footer__div__footer__socials__Ln__logo{
+                        filter:invert(100%);
+                    }
+                }
+                .footer__div__footer__socials__Ln__logo{
+                    width: 15px; 
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+}

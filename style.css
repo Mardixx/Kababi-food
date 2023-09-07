@@ -238,6 +238,122 @@
     background-position: top right;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    background-color: blue;
+    background-image: url("img/slider/img_bg_slider_home01.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .header .header-div-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .header-div-nav .header-nav-bar {
+    width: 90%;
+  }
+  .header .header-div-nav .header-logo-kababi {
+    width: 10% !important;
+    height: 50px !important;
+    margin: 1%;
+  }
+  .header .header-div-nav .header-unlisted-list {
+    gap: 3rem;
+    font-size: 30px;
+    margin-right: 20%;
+    margin-top: 1.5rem;
+  }
+  .header .header-div-nav .header-unlisted-list .header-list-logo {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+  }
+  .header .header-div-nav .header-unlisted-list2 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 7px;
+    gap: 1rem;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-phone-number {
+    font-size: 25px !important;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list-phone {
+    width: 80px !important;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-button-bookatable {
+    margin-left: 0px;
+    width: 200px !important;
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 25px !important;
+    color: #fff;
+    height: 50px !important;
+    background-color: rgb(197, 170, 104);
+    border: none;
+  }
+  .header .header-div-nav .header-unlisted-list2 .header-list {
+    display: flex;
+    align-self: center;
+  }
+  .header .header-div {
+    padding: 50px;
+  }
+  .header .header-div .header-div-play {
+    margin: 25% 15% 0 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url("img/logo/bouton-jouer.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #fff;
+  }
+  .header .header-div .header-explore-button {
+    display: flex;
+    padding: 0 10px;
+    line-height: 2.5;
+    font-size: 30px;
+    height: 70px;
+    width: 20%;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 25%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    gap: 30px;
+  }
+  .header .header-div .header-explore-button .header-arrow {
+    width: 40px;
+    height: 50px;
+    margin-top: 10px;
+    filter: invert(100%);
+  }
+  .header .header-div .header-arrow {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  }
+  .header .header-div-h1 {
+    font-family: "Cinzel", serif;
+    width: 40%;
+    height: 150px;
+  }
+  .header .header-div-h1 h1 {
+    background-image: url("img/slider/img_bg2.png");
+    background-size: 30%;
+    color: #fff;
+    background-repeat: no-repeat;
+    font-size: 170px;
+    background-position: top right;
+  }
+}
 /*Variables Color */
 .SectionTwo__Menu__header::after {
   position: absolute;
@@ -433,7 +549,7 @@
     align-items: center;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
-    width: 100px;
+    width: 70%;
     border-radius: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad {
@@ -442,11 +558,11 @@
     padding: 10px;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad .SectionTwo__Plat__img__salad {
-    width: 150px;
+    width: 90%;
     border-radius: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
-    width: 100px;
+    width: 70%;
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container {
     display: grid;
@@ -531,51 +647,52 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
-    margin: 0;
-    padding: 0;
     justify-content: center;
     align-items: center;
     font-size: 7px;
-    margin: 70px 50px 0px 50px;
-    font-size: 10px;
+    margin: 15% 10px;
+    font-size: 30px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__logo {
-    width: 10px;
+    width: 30px;
   }
-  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
     background-color: white;
     border-radius: 10px;
-    height: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover {
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover {
     background-color: rgb(218, 165, 32);
   }
-  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Marin {
+  .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail:hover .SectionTwo__Menu__img__Marin, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin:hover .SectionTwo__Menu__img__Marin {
     filter: brightness(0) invert(100%);
   }
   .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__img__Marin {
-    width: 30px;
+    width: 70px;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 5%;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
-    font-size: 15px;
+    font-size: 30px;
     margin: 0;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__p1 {
-    font-size: 10px;
+    font-size: 20px;
     margin: 0;
   }
   .SectionTwo__Menu__header::after {
     position: absolute;
     left: 0;
     content: "CATEGORY";
-    font-size: 60px;
-    opacity: 5%;
+    font-size: 100px;
+    color: #C8A96A;
+    opacity: 20%;
   }
 }
 /*Variables Color */
@@ -594,6 +711,10 @@
   grid-template-columns: repeat(2, 40%);
   justify-content: center;
   font-size: 12px;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body__text__p {
+  font-size: 13px;
+  width: 50%;
 }
 .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
   display: flex;
@@ -639,6 +760,10 @@
   float: right;
   width: 50px;
 }
+.SectionThree__Choose .SectionThree__Choose__div__body__img {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 @media only screen and (min-width: 410px) {
   .SectionThree__Choose__div__header::after {
@@ -666,7 +791,6 @@
     font-size: 15px;
     background-color: #fff;
     color: #000;
-    max-height: 30px;
     border: solid 1px #000;
   }
   .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button__logo {
@@ -699,15 +823,74 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  .SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__h2 {
-    font-size: 25px;
-    margin: 0;
-  }
-  .SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__p {
-    font-size: 10px;
-    margin: 0;
+  .SectionThree__Choose__div__header::after {
+    position: absolute;
+    left: 0;
+    content: "ABOUT US";
+    font-size: 100px;
+    color: #C8A96A;
+    opacity: 20%;
   }
 }
+.SectionThree__Choose {
+  padding-top: 10%;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body {
+  display: grid;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+  grid-template-columns: repeat(2, 40%);
+  gap: 1rem;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
+  width: 50%;
+  margin: 20px 0;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body__text__p {
+  font-size: 30px;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #000;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button__logo {
+  width: 10px;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 45%;
+}
+.SectionThree__Choose .SectionThree__Choose__div__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("img/about-us/iconbgabout.png");
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding-bottom: 25px;
+  background-size: 5%;
+  padding-top: 1rem;
+}
+.SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.SectionThree__Choose .SectionThree__Choose__div__header .SectionThree__Choose__div__header__p {
+  font-size: 20px;
+  margin: 0;
+}
+
 /*Variables Color */
 .SectionFour__OurMenu__div__header::after {
   content: "OUR MENU";
@@ -1700,6 +1883,8 @@
 @media only screen and (min-width: 768px) {
   .SectionSeven .SectionSeven__div__body {
     margin-left: 0%;
+    display: flex;
+    justify-content: center;
   }
 }
 /*Variables Color */
@@ -2168,6 +2353,237 @@
   .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln .footer__div__footer__socials__Ln__logo {
     width: 5px;
     height: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*Variables Color */
+  .footer {
+    color: gray;
+  }
+  .footer .footer__div {
+    display: flex;
+    line-height: 2.5;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+  }
+  .footer .footer__div .footer__div__about .footer__div__about__h2 {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__about .footer__div__about__ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__about .footer__div__about__ul .footer__div__about__ul__li {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+  }
+  .footer .footer__div .footer__div__facilities .footer__div__facilities__h2 {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__facilities .footer__div__facilities__ul {
+    padding: 0;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__facilities .footer__div__facilities__ul .footer__div__facilities__ul__li {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__h2 {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__p {
+    font-size: 20px;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    height: 30px;
+    width: 80%;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text .footer__div__newsletters__body__email__text__p {
+    font-size: 25px;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__arrow .footer__div__newsletters__body__email__arrow__logo {
+    width: 20px;
+    background-color: #C8A96A;
+    padding: 5px;
+  }
+  .footer .footer__div .footer__div__contact .footer__div__contact__h2 {
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+  }
+  .footer .footer__div .footer__div__contact .footer__div__contact__ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer .footer__div .footer__div__contact .footer__div__contact__ul .footer__div__contact__ul__li {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer__div .footer__div__contact .footer__div__contact__ul .footer__div__contact__li__logo {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .footer__background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .footer .footer__div__header {
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer__div__header .footer__div__header__img {
+    width: 10%;
+  }
+  .footer .footer__div__footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    height: 50px;
+  }
+  .footer .footer__div__footer .footer__div__footer__copyright {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p {
+    font-size: 20px;
+  }
+  .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__strong {
+    font-style: normal;
+    color: #C8A96A;
+  }
+  .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__logo {
+    width: 3px;
+  }
+  .footer .footer__div__footer .footer__div__footer__spoon {
+    margin-right: 46%;
+  }
+  .footer .footer__div__footer .footer__div__footer__spoon .footer__div__footer__spoon__img {
+    width: 100px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials {
+    position: absolute;
+    right: 0;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb:hover {
+    background-color: #C8A96A;
+    color: #fff;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb:hover .footer__div__footer__socials__fb__logo {
+    filter: invert(100%);
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb .footer__div__footer__socials__fb__logo {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X:hover {
+    background-color: #C8A96A;
+    color: #fff;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X:hover .footer__div__footer__socials__X__logo {
+    filter: invert(100%);
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X .footer__div__footer__socials__X__logo {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb:hover {
+    background-color: #C8A96A;
+    color: #fff;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb:hover .footer__div__footer__socials__ytb__logo {
+    filter: invert(100%);
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb .footer__div__footer__socials__ytb__logo {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln:hover {
+    background-color: #C8A96A;
+    color: #fff;
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln:hover .footer__div__footer__socials__Ln__logo {
+    filter: invert(100%);
+  }
+  .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln .footer__div__footer__socials__Ln__logo {
+    width: 15px;
+    height: 15px;
   }
 }
 /*Variables Color */
