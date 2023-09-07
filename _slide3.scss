@@ -6,7 +6,6 @@
     opacity: 5%;
 }
 .SectionThree__Choose {
-    font-family: 'Forum', cursive;
     .SectionThree__Choose__div__body {
         display: grid;
         gap: 30px;
@@ -79,12 +78,19 @@
             .SectionThree__Choose__div__body__text {
                 .SectionThree__Choose__div__body__text__p {
                     font-size: 20px;
+                
                 }
-            }
-            .SectionThree__Choose__div__body___text__button {
-                font-size: 20px;
-                background-color: rgba(197,170,104,255);
-                color: white;
+                .SectionThree__Choose__div__body___text__button {
+                    font-size: 15px;
+                    background-color: rgba(197,170,104,255);
+                    color: white;
+                    max-height: 30px;
+    
+                    .SectionThree__Choose__div__body___text__button__logo {
+                        width: 10px;
+                        filter: invert(100%);
+                    }
+                }
             }
     
             .SectionThree__Choose__div__body__img {

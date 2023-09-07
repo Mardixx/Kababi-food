@@ -143,6 +143,11 @@
     margin-right: 2rem;
     margin-top: 0.5rem;
   }
+  .header .header-div-nav .header-unlisted-list .header-list-logo {
+    filter: invert(100%);
+    width: 15px;
+    height: 15px;
+  }
   .header .header-div-nav .header-unlisted-list2 {
     display: flex;
     flex-direction: row;
@@ -164,7 +169,7 @@
     border-radius: 5px;
     font-size: 7px;
     color: white;
-    height: 20px;
+    height: 10px !important;
     background-color: rgb(197, 170, 104);
     border: none;
   }
@@ -189,8 +194,12 @@
   }
   .header .header-div .header-explore-button {
     display: flex;
-    align-self: flex-end;
+    padding: 0 10px;
+    line-height: 3;
+    text-align: center;
+    vertical-align: middle;
     font-size: 10px;
+    height: 30px;
     width: -moz-fit-content;
     width: fit-content;
     color: white;
@@ -198,10 +207,12 @@
     margin-top: 30px;
     border: 1px solid gray;
     border-radius: 5px;
+    gap: 10px;
   }
   .header .header-div .header-explore-button .header-arrow {
     width: 10px;
     height: 10px;
+    margin-top: 10px;
     filter: invert(100%);
   }
   .header .header-div .header-arrow {
@@ -240,7 +251,6 @@
 
 .SectionTwo__Menu .SectionTwo__Menu__background {
   position: absolute;
-  background-color: rgba(218, 165, 32, 0.5);
   width: 100%;
   opacity: 100%;
   z-index: -1;
@@ -315,23 +325,30 @@
     justify-content: space-around;
     align-items: center;
   }
-  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__crepe {
-    width: 200px;
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__crepe {
+    margin-left: 10%;
+    padding: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__crepe .SectionTwo__Plat__img__crepe {
+    width: 70%;
     border-radius: 50%;
-    margin-top: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad {
     background-color: #fff;
     border-radius: 50%;
-    padding: 10px;
+    margin: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__div__salad .SectionTwo__Plat__img__salad {
-    width: 300px;
+    width: 90%;
     border-radius: 50%;
   }
   .SectionTwo__Menu .SectionTwo__Plat .SectionTwo__Plat__img__egg {
-    width: 200px;
-    margin-top: 50%;
+    width: 70%;
   }
   .SectionTwo__Menu .SectionTwo__Menu__background {
     position: relative;
@@ -370,9 +387,11 @@
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__h2 {
     font-size: 15px;
+    margin: 0;
   }
   .SectionTwo__Menu .SectionTwo__Menu__header .SectionTwo__Menu__header__p1 {
     font-size: 10px;
+    margin: 0;
   }
   .SectionTwo__Menu__header::after {
     position: absolute;
@@ -390,9 +409,6 @@
   opacity: 5%;
 }
 
-.SectionThree__Choose {
-  font-family: "Forum", cursive;
-}
 .SectionThree__Choose .SectionThree__Choose__div__body {
   display: grid;
   gap: 30px;
@@ -454,10 +470,15 @@
   .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body__text__p {
     font-size: 20px;
   }
-  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body___text__button {
-    font-size: 20px;
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
+    font-size: 15px;
     background-color: rgb(197, 170, 104);
     color: white;
+    max-height: 30px;
+  }
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button .SectionThree__Choose__div__body___text__button__logo {
+    width: 10px;
+    filter: invert(100%);
   }
   .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
     width: 100%;
@@ -494,7 +515,7 @@
 }
 
 .SectionFour__OurMenu {
-  background-color: rgba(217, 165, 32, 0.08);
+  background-color: rgb(197, 170, 104);
   z-index: 99;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__steak .SectionFour__OurMenu__div_steak_img {
@@ -704,9 +725,11 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__h2 {
     font-size: 15px;
+    margin: 0;
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__p {
     font-size: 10px;
+    margin: 0;
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__bread {
     display: none;
@@ -726,7 +749,7 @@
     border-radius: 10px;
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw {
-    display: flex;
+    margin: 0;
     background-color: white;
     border-radius: 5px;
     border: 1px dotted rgb(197, 170, 104);
@@ -972,9 +995,11 @@
   }
   .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__h2 {
     font-size: 15px;
+    margin: 0;
   }
   .SectionFive__Restaurant .SectionFive__Restaurant__div__header .SectionFive__Restaurant__div__header__p {
     font-size: 10px;
+    margin: 0;
   }
   .SectionFive__Restaurant .SectionFive__Restaurant__div__body {
     display: grid;

@@ -7,7 +7,7 @@
 }
 
 .SectionFour__OurMenu {
-    background-color: rgba(217, 165, 32, 0.08);
+    background-color: rgba(197,170,104,255);
     z-index: 99;
 
     .SectionFour__OurMenu__div__steak {
@@ -300,10 +300,12 @@
     
             .SectionFour__OurMenu__div__header__h2 {
                 font-size: 15px;
+                margin: 0;
             }
     
             .SectionFour__OurMenu__div__header__p {
                 font-size: 10px;
+                margin: 0;
             }
         }
     
@@ -328,8 +330,7 @@
             grid-gap: 15px;
             border-radius: 10px;
     
-            .SectionFour__OurMenu__div__menu__raw {
-                display: flex;
+            .SectionFour__OurMenu__div__menu__raw {                        margin: 0;
                 background-color: white;
                 border-radius: 5px;
                 border: 1px dotted rgba(197,170,104,255);

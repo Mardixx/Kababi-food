@@ -162,6 +162,12 @@
                gap: 1rem;
                margin-right: 2rem;
                margin-top: .5rem;
+               .header-list-logo {
+                filter: invert(100%);
+                width: 15px;
+                height: 15px;
+
+               }
             }
 
             .header-unlisted-list2 {
@@ -186,7 +192,7 @@
                     border-radius: 5px;
                     font-size: 7px;
                     color: white;
-                    height: 20px;
+                    height: 10px !important;
                     background-color: rgba(197,170,104,255);
                     border: none;
                 }
@@ -221,17 +227,23 @@
     
                 .header-explore-button {
                     display: flex;
-                    align-self: flex-end;
+                    padding: 0 10px;
+                    line-height: 3;
+                    text-align: center;
+                    vertical-align: middle;
                     font-size: 10px;
+                    height: 30px;
                     width: fit-content;
                     color: white;
                     background-color: transparent;
                     margin-top: 30px;
                     border: 1px solid gray;
                     border-radius: 5px;
+                    gap: 10px;
                     .header-arrow {
                         width: 10px;
                         height: 10px;
+                        margin-top: 10px;
                         filter: invert(100%);
                         
                     }
