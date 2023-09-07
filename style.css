@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+/*Variables Color */
 @import "normalize.css";
 .header {
   max-width: 100%;
@@ -8,7 +9,7 @@
   background-image: url("img/slider/img_bg_slider_home01.jpg");
   background-size: cover;
   background-position: center center;
-  color: white;
+  color: #fff;
 }
 .header .header-div {
   background-size: cover;
@@ -16,11 +17,11 @@
 }
 .header .header-div .header-div-play {
   float: right;
-  border: 5px solid white;
+  border: 5px solid #fff;
   margin: 50px;
   margin-top: 75px;
   margin-right: 55px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -36,7 +37,10 @@
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
-  color: white;
+  color: #fff;
+}
+.header .header-div .header-explore-button:hover {
+  background-color: #C8A96A;
 }
 .header .header-div .header-arrow {
   width: 7px;
@@ -51,7 +55,7 @@
 .header .header-div-h1 h1 {
   background-image: url("img/about-us/iconbgabout.png");
   background-size: 50%;
-  color: white;
+  color: #fff;
   background-repeat: no-repeat;
   font-size: 20px;
   background-position: top left;
@@ -104,7 +108,7 @@
   text-align: center;
   border-radius: 5px;
   font-size: 7px;
-  color: white;
+  color: #fff;
   height: 10px;
   background-color: rgb(197, 170, 104);
   border: none;
@@ -168,7 +172,7 @@
     font-size: 15px;
     border-radius: 5px;
     font-size: 7px;
-    color: white;
+    color: #fff;
     height: 10px !important;
     background-color: rgb(197, 170, 104);
     border: none;
@@ -182,7 +186,7 @@
   }
   .header .header-div .header-div-play {
     margin: 19% 15%;
-    background-color: white;
+    background-color: #fff;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -190,7 +194,7 @@
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center center;
-    border: 1px solid white;
+    border: 1px solid #fff;
   }
   .header .header-div .header-explore-button {
     display: flex;
@@ -202,7 +206,7 @@
     height: 30px;
     width: -moz-fit-content;
     width: fit-content;
-    color: white;
+    color: #fff;
     background-color: transparent;
     margin-top: 30px;
     border: 1px solid gray;
@@ -228,12 +232,13 @@
   .header .header-div-h1 h1 {
     background-image: url("img/slider/img_bg2.png");
     background-size: 20%;
-    color: white;
+    color: #fff;
     background-repeat: no-repeat;
     font-size: 50px;
     background-position: top right;
   }
 }
+/*Variables Color */
 .SectionTwo__Menu__header::after {
   position: absolute;
   left: 0;
@@ -292,8 +297,8 @@
 .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__logo {
   width: 7px;
 }
-.SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
-  background-color: white;
+.SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Burger, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu .SectionTwo__Menu__div__container .SectionTwo__Menu__div__Marin {
+  background-color: #fff;
   border-radius: 10px;
   height: 80%;
 }
@@ -401,6 +406,7 @@
     opacity: 5%;
   }
 }
+/*Variables Color */
 .SectionThree__Choose__div__header::after {
   position: absolute;
   left: 0;
@@ -418,16 +424,25 @@
   font-size: 12px;
 }
 .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
-  font-size: 20px;
-  background-color: rgb(197, 170, 104);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 10px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  max-height: 30px;
+  border: solid 1px #000;
 }
-.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
-  width: 100%;
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button:hover {
+  background-color: #C8A96A;
+  color: #fff;
+  border: none;
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button:hover .SectionThree__Choose__div__body___text__button__logo {
+  filter: invert(100%);
+}
+.SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button__logo {
+  width: 10px;
 }
 .SectionThree__Choose .SectionThree__Choose__div__header {
   display: flex;
@@ -471,14 +486,17 @@
     font-size: 20px;
   }
   .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
-    background-color: rgb(197, 170, 104);
-    color: white;
+    background-color: #fff;
+    color: #000;
     max-height: 30px;
+    border: solid 1px #000;
   }
-  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button .SectionThree__Choose__div__body___text__button__logo {
+  .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__text .SectionThree__Choose__div__body___text__button__logo {
     width: 10px;
-    filter: invert(100%);
   }
   .SectionThree__Choose .SectionThree__Choose__div__body .SectionThree__Choose__div__body__img {
     width: 100%;
@@ -506,6 +524,7 @@
     width: 50px;
   }
 }
+/*Variables Color */
 .SectionFour__OurMenu__div__header::after {
   content: "OUR MENU";
   position: absolute;
@@ -549,16 +568,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
-  border: 1px dotted goldenrod;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__price .SectionFour__OurMenu__div__menu__raw__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__text .SectionFour__OurMenu__div__menu__raw__text__h3 {
@@ -569,15 +590,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__price .SectionFour__OurMenu__div__menu__correze__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__text .SectionFour__OurMenu__div__menu__correze__text__h3 {
@@ -588,15 +612,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__price .SectionFour__OurMenu__div__menu__celeriac__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__text .SectionFour__OurMenu__div__menu__celeriac__text__h3 {
@@ -607,15 +634,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__price .SectionFour__OurMenu__div__menu__grilled__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__text .SectionFour__OurMenu__div__menu__grilled__text__h3 {
@@ -626,15 +656,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__price .SectionFour__OurMenu__div__menu__cod__price {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__text .SectionFour__OurMenu__div__menu__cod__text__h3 {
@@ -645,15 +678,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__price .SectionFour__OurMenu__div__menu__octopus__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__text .SectionFour__OurMenu__div__menu__octopus__text__h3 {
@@ -664,15 +700,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__price .SectionFour__OurMenu__div__menu__bass__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__text .SectionFour__OurMenu__div__menu__correze__text__h3 {
@@ -683,15 +722,18 @@
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese {
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+.SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese:hover {
+  border: 1px dotted #C8A96A;
+}
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__price .SectionFour__OurMenu__div__menu__viennese__price__p {
-  color: goldenrod;
+  color: #C8A96A;
   margin-right: 10px;
 }
 .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__text .SectionFour__OurMenu__div__menu__viennese__text__h3 {
@@ -750,7 +792,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw {
     margin: 0;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     border: 1px dotted rgb(197, 170, 104);
     flex-direction: row;
@@ -770,7 +812,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -789,7 +831,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -808,7 +850,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -827,7 +869,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -846,7 +888,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -865,7 +907,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -887,7 +929,7 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese {
     display: flex;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     flex-direction: row;
     justify-content: center;
@@ -903,6 +945,46 @@
   }
   .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__text .SectionFour__OurMenu__div__menu__viennese__text__p {
     font-size: 10px;
+  }
+}
+@media only screen and (min-width: 718px) {
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__header .SectionFour__OurMenu__div__header__p {
+    font-size: 10px;
+    margin: 0;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__raw .SectionFour__OurMenu__div__menu__raw__price .SectionFour__OurMenu__div__menu__raw__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__correze .SectionFour__OurMenu__div__menu__correze__price .SectionFour__OurMenu__div__menu__correze__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__celeriac .SectionFour__OurMenu__div__menu__celeriac__price .SectionFour__OurMenu__div__menu__celeriac__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__grilled .SectionFour__OurMenu__div__menu__grilled__price .SectionFour__OurMenu__div__menu__grilled__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__cod .SectionFour__OurMenu__div__menu__cod__price .SectionFour__OurMenu__div__menu__cod__price {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__octopus .SectionFour__OurMenu__div__menu__octopus__price .SectionFour__OurMenu__div__menu__octopus__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__bass .SectionFour__OurMenu__div__menu__bass__price .SectionFour__OurMenu__div__menu__bass__price__p {
+    font-size: 25px;
+  }
+  .SectionFour__OurMenu .SectionFour__OurMenu__div__menu .SectionFour__OurMenu__div__menu__viennese .SectionFour__OurMenu__div__menu__viennese__price .SectionFour__OurMenu__div__menu__viennese__price__p {
+    font-size: 25px;
   }
 }
 .SectionFive__Restaurant__div__header::after {

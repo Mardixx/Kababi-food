@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 .SectionFour__OurMenu__div__header::after {
     content: "OUR MENU";
     position: absolute;
@@ -58,17 +60,19 @@
 
         .SectionFour__OurMenu__div__menu__raw {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
-            border: 1px dotted goldenrod;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
+            &:hover{
+                border: 1px dotted $color_button;
+            }
 
             .SectionFour__OurMenu__div__menu__raw__price {
                 .SectionFour__OurMenu__div__menu__raw__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -85,16 +89,19 @@
 
         .SectionFour__OurMenu__div__menu__correze {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
+            &:hover{
+                border: 1px dotted $color_button;
+            }
 
             .SectionFour__OurMenu__div__menu__correze__price {
                 .SectionFour__OurMenu__div__menu__correze__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -111,16 +118,18 @@
 
         .SectionFour__OurMenu__div__menu__celeriac {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__celeriac__price {
                 .SectionFour__OurMenu__div__menu__celeriac__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -137,16 +146,18 @@
 
         .SectionFour__OurMenu__div__menu__grilled {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__grilled__price {
                 .SectionFour__OurMenu__div__menu__grilled__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -163,16 +174,18 @@
 
         .SectionFour__OurMenu__div__menu__cod {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__cod__price {
                 .SectionFour__OurMenu__div__menu__cod__price {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -189,16 +202,18 @@
 
         .SectionFour__OurMenu__div__menu__octopus {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__octopus__price {
                 .SectionFour__OurMenu__div__menu__octopus__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -215,16 +230,18 @@
 
         .SectionFour__OurMenu__div__menu__bass {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__bass__price {
                 .SectionFour__OurMenu__div__menu__bass__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -241,16 +258,18 @@
 
         .SectionFour__OurMenu__div__menu__viennese {
             display: flex;
-            background-color: white;
+            background-color: $color_white;
             border-radius: 5px;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 5px;
-
+            &:hover{
+                border: 1px dotted $color_button;
+            }
             .SectionFour__OurMenu__div__menu__viennese__price {
                 .SectionFour__OurMenu__div__menu__viennese__price__p {
-                    color: goldenrod;
+                    color: $color_button;
                     margin-right: 10px;
                 }
             }
@@ -330,8 +349,9 @@
             grid-gap: 15px;
             border-radius: 10px;
     
-            .SectionFour__OurMenu__div__menu__raw {                        margin: 0;
-                background-color: white;
+            .SectionFour__OurMenu__div__menu__raw {                        
+                margin: 0;
+                background-color: $color_white;
                 border-radius: 5px;
                 border: 1px dotted rgba(197,170,104,255);
                 flex-direction: row;
@@ -358,7 +378,7 @@
     
             .SectionFour__OurMenu__div__menu__correze {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -384,7 +404,7 @@
     
             .SectionFour__OurMenu__div__menu__celeriac {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -410,7 +430,7 @@
     
             .SectionFour__OurMenu__div__menu__grilled {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -436,7 +456,7 @@
     
             .SectionFour__OurMenu__div__menu__cod {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -462,7 +482,7 @@
     
             .SectionFour__OurMenu__div__menu__octopus {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -488,7 +508,7 @@
     
             .SectionFour__OurMenu__div__menu__bass {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -515,7 +535,7 @@
     
             .SectionFour__OurMenu__div__menu__viennese {
                 display: flex;
-                background-color: white;
+                background-color: $color_white;
                 border-radius: 5px;
                 flex-direction: row;
                 justify-content: center;
@@ -535,6 +555,96 @@
     
                     .SectionFour__OurMenu__div__menu__viennese__text__p {
                         font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 718px) {
+    
+    .SectionFour__OurMenu {
+    
+        .SectionFour__OurMenu__div__header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 1rem;
+    
+            .SectionFour__OurMenu__div__header__h2 {
+                font-size: 25px;
+                margin: 0;
+            }
+    
+            .SectionFour__OurMenu__div__header__p {
+                font-size: 10px;
+                margin: 0;
+            }
+        }
+        .SectionFour__OurMenu__div__menu {
+            
+            .SectionFour__OurMenu__div__menu__raw {                        
+    
+                .SectionFour__OurMenu__div__menu__raw__price {
+                    .SectionFour__OurMenu__div__menu__raw__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__correze {
+                .SectionFour__OurMenu__div__menu__correze__price {
+                    .SectionFour__OurMenu__div__menu__correze__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__celeriac {
+                .SectionFour__OurMenu__div__menu__celeriac__price {
+                    .SectionFour__OurMenu__div__menu__celeriac__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__grilled {
+                .SectionFour__OurMenu__div__menu__grilled__price {
+                    .SectionFour__OurMenu__div__menu__grilled__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__cod {
+                .SectionFour__OurMenu__div__menu__cod__price {
+                    .SectionFour__OurMenu__div__menu__cod__price {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__octopus {
+                .SectionFour__OurMenu__div__menu__octopus__price {
+                    .SectionFour__OurMenu__div__menu__octopus__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__bass {
+    
+                .SectionFour__OurMenu__div__menu__bass__price {
+                    .SectionFour__OurMenu__div__menu__bass__price__p {
+                        font-size:25px;
+                    }
+                }
+            }
+    
+            .SectionFour__OurMenu__div__menu__viennese {
+                .SectionFour__OurMenu__div__menu__viennese__price {
+                    .SectionFour__OurMenu__div__menu__viennese__price__p {
+                        font-size:25px;
                     }
                 }
             }

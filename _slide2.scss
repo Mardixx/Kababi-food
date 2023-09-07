@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 .SectionTwo__Menu__header::after {
     position: absolute;
     left: 0;
@@ -61,8 +63,8 @@
         .SectionTwo__Menu__logo {
             width: 7px;
         }
-        .SectionTwo__Menu__div__burger, .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu__div__Marin {
-            background-color: white;
+        .SectionTwo__Menu__div__Burger, .SectionTwo__Menu__div__Pizza, .SectionTwo__Menu__div__Coffee, .SectionTwo__Menu__div__Chicken, .SectionTwo__Menu__div__Cocktail, .SectionTwo__Menu__div__Marin {
+            background-color: $color_white;
             border-radius: 10px;
             height: 80%;
         }
