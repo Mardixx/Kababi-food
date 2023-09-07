@@ -1169,19 +1169,20 @@
   background-color: #FAF6F0;
   grid-gap: 10px;
   padding-bottom: 5%;
+}
+.SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
   /*
-  .SectionSeven__div__body__blog__img{
-      .SectionSeven__div__body__blog__img__photo{
+  .SectionSeven__div__body__blog__img__photo{
 
-      }
-  }
-  */
+  }*/
 }
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__credit {
   display: flex;
   flex-direction: row;
   gap: 5%;
-  padding-top: 5%;
   padding-left: 5%;
 }
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__credit .SectionSeven__div__body__blog__credit__by {
@@ -1223,9 +1224,16 @@
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__footer .SectionSeven__div__body__blog__footer__button {
   font-size: 13px;
   padding: 2%;
-  background-color: white;
+  background-color: #fff;
   border: none;
   border-radius: 5px;
+}
+.SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__footer .SectionSeven__div__body__blog__footer__button:hover {
+  color: #fff;
+  background-color: #C8A96A;
+}
+.SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__footer .SectionSeven__div__body__blog__footer__button:hover .SectionSeven__div__body__blog__footer__button__logo {
+  filter: invert(100%);
 }
 .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__footer .SectionSeven__div__body__blog__footer__button .SectionSeven__div__body__blog__footer__button__logo {
   height: 10px;
@@ -1268,6 +1276,10 @@
     flex-direction: row;
     margin-left: 5%;
   }
+  .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog {
+    display: grid;
+    grid-template-rows: 50% 5% 30% 15%;
+  }
   .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__img .SectionSeven__div__body__blog__img__photo {
     width: 90%;
   }
@@ -1289,7 +1301,7 @@
   .SectionSeven .SectionSeven__div__body .SectionSeven__div__body__blog .SectionSeven__div__body__blog__footer .SectionSeven__div__body__blog__footer__button {
     font-size: 8px;
     padding: 5%;
-    background-color: white;
+    background-color: #fff;
     border: none;
     border-radius: 5px;
   }
@@ -1310,6 +1322,11 @@
     font-size: 50px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .SectionSeven .SectionSeven__div__body {
+    margin-left: 0%;
+  }
+}
 /*Variables Color */
 .footer {
   color: gray;
@@ -1322,7 +1339,7 @@
 }
 .footer .footer__div .footer__div__about .footer__div__about__h2 {
   font-size: 15px;
-  color: white;
+  color: #fff;
   margin: 0;
 }
 .footer .footer__div .footer__div__about .footer__div__about__ul {
@@ -1338,7 +1355,7 @@
 }
 .footer .footer__div .footer__div__facilities .footer__div__facilities__h2 {
   font-size: 15px;
-  color: white;
+  color: #fff;
   margin: 0;
 }
 .footer .footer__div .footer__div__facilities .footer__div__facilities__ul {
@@ -1352,7 +1369,7 @@
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__h2 {
   font-size: 15px;
-  color: white;
+  color: #fff;
   margin: 0;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__header .footer__div__newsletters__header__p {
@@ -1365,7 +1382,7 @@
   gap: 0;
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__text {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1384,12 +1401,12 @@
 }
 .footer .footer__div .footer__div__newsletters .footer__div__newsletters__body__email .footer__div__newsletters__body__email__arrow .footer__div__newsletters__body__email__arrow__logo {
   width: 5px;
-  background-color: goldenrod;
+  background-color: #C8A96A;
   padding: 5px;
 }
 .footer .footer__div .footer__div__contact .footer__div__contact__h2 {
   font-size: 15px;
-  color: white;
+  color: #fff;
   margin: 0;
 }
 .footer .footer__div .footer__div__contact .footer__div__contact__ul {
@@ -1437,7 +1454,7 @@
 }
 .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__strong {
   font-style: normal;
-  color: goldenrod;
+  color: #C8A96A;
 }
 .footer .footer__div__footer .footer__div__footer__copyright .footer__div__footer__copyright__p .footer__div__footer__copyright__p__logo {
   width: 3px;
@@ -1456,32 +1473,92 @@
 .footer .footer__div__footer .footer__div__footer__socials {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2px;
+  width: 5px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb:hover {
+  background-color: #C8A96A;
+  color: #fff;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb:hover .footer__div__footer__socials__fb__logo {
+  filter: invert(100%);
 }
 .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__fb .footer__div__footer__socials__fb__logo {
   width: 5px;
-  background-color: white;
-  padding: 2px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
   border-radius: 50%;
+  padding: 2px;
+  width: 5px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X:hover {
+  background-color: #C8A96A;
+  color: #fff;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X:hover .footer__div__footer__socials__X__logo {
+  filter: invert(100%);
 }
 .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__X .footer__div__footer__socials__X__logo {
   width: 5px;
-  background-color: white;
-  padding: 2px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
   border-radius: 50%;
+  padding: 2px;
+  width: 5px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb:hover {
+  background-color: #C8A96A;
+  color: #fff;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb:hover .footer__div__footer__socials__ytb__logo {
+  filter: invert(100%);
 }
 .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__ytb .footer__div__footer__socials__ytb__logo {
   width: 5px;
-  background-color: white;
-  padding: 2px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
   border-radius: 50%;
+  padding: 2px;
+  width: 5px;
+  height: 5px;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln:hover {
+  background-color: #C8A96A;
+  color: #fff;
+}
+.footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln:hover .footer__div__footer__socials__Ln__logo {
+  filter: invert(100%);
 }
 .footer .footer__div__footer .footer__div__footer__socials .footer__div__footer__socials__Ln .footer__div__footer__socials__Ln__logo {
   width: 5px;
-  background-color: white;
-  padding: 2px;
-  border-radius: 50%;
+  height: 5px;
 }
 
 /*Variables Color */

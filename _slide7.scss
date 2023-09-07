@@ -28,18 +28,19 @@
             background-color: $color_background;
             grid-gap: 10px;
             padding-bottom: 5%;
-            /*
             .SectionSeven__div__body__blog__img{
+                display:flex;
+                justify-content: center;
+                margin-bottom: 0;
+                /*
                 .SectionSeven__div__body__blog__img__photo{
     
-                }
+                }*/
             }
-            */
             .SectionSeven__div__body__blog__credit{
                 display: flex;
                 flex-direction: row;
                 gap:5%;
-                padding-top:5%;
                 padding-left:5%;
                 .SectionSeven__div__body__blog__credit__by{
                     display: flex;
@@ -80,9 +81,16 @@
                 .SectionSeven__div__body__blog__footer__button{
                     font-size:13px;
                     padding:2%;
-                    background-color: white;
+                    background-color: $color_white;
                     border: none;
                     border-radius: 5px;
+                    &:hover{
+                        color:$color_white;
+                        background-color: $color_button;
+                        .SectionSeven__div__body__blog__footer__button__logo{
+                            filter:invert(100%);
+                        }
+                    }
                     .SectionSeven__div__body__blog__footer__button__logo{
                         height:10px;
                         padding:0 5px;
@@ -132,6 +140,8 @@
             flex-direction: row;
             margin-left:5%;
             .SectionSeven__div__body__blog{
+                display:grid;
+                grid-template-rows: 50% 5% 30% 15%;
                 .SectionSeven__div__body__blog__img{
                     .SectionSeven__div__body__blog__img__photo{
                         width:90%;
@@ -164,7 +174,7 @@
                     .SectionSeven__div__body__blog__footer__button{
                         font-size:8px;
                         padding:5%;
-                        background-color: white;
+                        background-color: $color_white;
                         border: none;
                         border-radius: 5px;
                         .SectionSeven__div__body__blog__footer__button__logo{
@@ -192,5 +202,13 @@
     }
     .SectionSeven__div__header:after{
         font-size:50px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .SectionSeven{
+        .SectionSeven__div__body{
+            margin-left:0%;
+        }
     }
 }
